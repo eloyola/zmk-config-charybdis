@@ -250,12 +250,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp GRAVE       &kp N1              &kp N2          &kp N3          &kp N4        &kp N5                &kp N6           &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
-&kp TAB         &kp Q               &kp W           &kp E           &kp R         &kp T                 &kp Y            &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
-&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LSHIFT F  &kp G                 &kp H            &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LEFT_SHIFT  &lt 1 Z             &kp X           &kp C           &kp V         &kp B                 &kp N            &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp RIGHT_SHIFT
-                                                    &kp LWIN        &kp SPACE     &lt 3 LEFT_CONTROL    &lt 2 BACKSPACE  &blt 4 SPACE
-                                                                    &kp DEL       &kp BACKSPACE         &kp RET
+&kp ESC    &kp N1              &kp N2          &kp N3          &kp N4        &kp N5                 &kp N6            &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
+&kp TAB    &kp Q               &kp W           &kp E           &kp R         &kp T                  &kp Y             &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
+&kp LSHFT  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LSHIFT F  &kp G                  &kp H             &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LCTRL  &lt 1 Z             &kp X           &kp C           &kp V         &kp B                  &kp N             &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp LEFT_ALT
+                                               &kp LWIN        &kp SPACE     &blt 3 LEFT_CONTROL    &blt 2 BACKSPACE  &blt 4 SPACE
+                                                               &kp DEL       &kp BACKSPACE          &kp RET
             >;
         };
 
@@ -263,12 +263,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&kp F12           &kp F1  &kp F2  &kp F3    &kp F4    &kp F5      &kp F6    &kp F7    &kp F8  &kp F9  &kp F10  &kp F11
-&trans            &none   &none   &none     &none     &none       &none     &none     &none   &none   &none    &none
-&kp LEFT_CONTROL  &none   &none   &none     &none     &none       &none     &none     &none   &none   &none    &none
-&trans            &none   &none   &none     &none     &none       &none     &none     &none   &none   &none    &trans
-                                  &mkp MB1  &mkp MB3  &mkp MB2    &mkp MB3  &mkp MB2
-                                            &mo 6     &mo 5       &mkp MB1
+&kp F12  &kp F1  &kp F2  &kp F3    &kp F4    &kp F5      &kp F6         &kp F7    &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &none   &none   &none     &none     &none       &kp PAGE_UP    &none     &none   &none   &none    &none
+&trans   &none   &none   &none     &none     &none       &kp PAGE_DOWN  &none     &none   &none   &none    &none
+&trans   &none   &none   &none     &none     &none       &none          &none     &none   &none   &none    &trans
+                         &mkp MB1  &mkp MB3  &mkp MB2    &mkp MB4       &mkp MB5
+                                   &mo 6     &mo 5       &mkp MB1
             >;
         };
 
@@ -278,8 +278,8 @@
             bindings = <
 &kp F12    &CAC F1  &CAC F2         &CAC F3         &CAC F4          &CAC F5                 &CAC F6                &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
 &none      &none    &none           &kp UP_ARROW    &none            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7   &kp N8   &kp N9   &kp PLUS   &kp MINUS
-&kp PSCRN  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N4   &kp N5   &kp N6   &kp ASTRK  &kp SLASH
-&kp CAPS   &none    &none           &none           &none            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N1   &kp N2   &kp N3   &kp EQUAL  &trans
+&kp CAPS   &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N4   &kp N5   &kp N6   &kp ASTRK  &kp SLASH
+&kp PSCRN  &none    &none           &none           &none            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N1   &kp N2   &kp N3   &kp EQUAL  &trans
                                     &trans          &trans           &trans                  &trans                 &kp N0
                                                     &trans           &trans                  &kp PERIOD
             >;
@@ -289,12 +289,12 @@
             label = "RAISE";
             display-name = "Raise";
             bindings = <
-&kp F12  &kp F1  &kp F2      &kp F3        &kp F4         &kp F5           &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)    &CA Y       &none   &none   &none   &none    &none
-&trans   &CA A   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)       &kp INSERT  &none   &none   &none   &none    &none
-&trans   &CA Z   &CA X       &CA C         &CA V          &none            &none       &none   &none   &none   &none    &none
-                             &trans        &trans         &trans           &trans      &trans
-                                           &trans         &trans           &trans
+&kp F12  &kp F1  &kp F2      &kp F3        &kp F4         &kp F5           &kp F6      &kp F7   &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)    &CA Y       &none    &none   &none   &none    &none
+&trans   &CA A   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)       &none       &none    &none   &none   &none    &none
+&trans   &CA Z   &CA X       &CA C         &CA V          &none            &none       &none    &none   &none   &none    &trans
+                             &trans        &trans         &trans           &kp HOME    &kp END
+                                           &trans         &trans           &kp INSERT
             >;
         };
 
