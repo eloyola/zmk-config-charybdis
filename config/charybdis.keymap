@@ -280,7 +280,7 @@
 &trans   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LSHFT          &none              &kp PAGE_DOWN  &kp RSHIFT  &kp RWIN  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none
 &trans   &none             &none         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none          &none       &none     &none          &none              &trans
                                          &mkp MB1      &mkp MB3           &mkp MB2           &mkp MB4       &mkp MB5
-                                                       &mo 6              &mo 5              &mkp MB1
+                                                       &mo 5              &mo 6              &mkp MB1
             >;
         };
 
