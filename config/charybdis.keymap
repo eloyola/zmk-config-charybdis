@@ -77,7 +77,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 53 54 55>; // Right side keys
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 53 54>; // Right side keys
             hold-trigger-on-release;
         };
 
@@ -264,7 +264,7 @@
             bindings = <
 &kp ESC    &kp N1               &kp N2           &kp N3           &kp N4         &kp N5                 &kp N6            &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
 &kp TAB    &kp Q                &kp W            &kp E            &kp R          &kp T                  &kp Y             &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
-&kp LSHFT  &cht LEFT_CONTROL A  &cht LEFT_ALT S  &cht LEFT_WIN D  &cht LSHIFT F  &kp G                  &kp H             &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LSHFT  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_WIN D  &hml LSHIFT F  &kp G                  &kp H             &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
 &kp LCTRL  &lt 1 Z              &kp X            &kp C            &kp V          &kp B                  &kp N             &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp LEFT_ALT
                                                  &kp LWIN         &kp SPACE      &blt 3 LEFT_CONTROL    &blt 2 BACKSPACE  &blt 4 SPACE
                                                                   &kp DEL        &kp BACKSPACE          &kp RET
