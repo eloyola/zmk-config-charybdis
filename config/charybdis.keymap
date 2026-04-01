@@ -276,12 +276,12 @@
             label = "LOWER";
             display-name = "Lower";
             bindings = <
-&kp F12    &CAC F1   &CAC F2   &CAC F3    &CAC F4               &CAC F5                  &CAC F6     &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
-&none      &none     &kp UP    &none      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp N7      &kp N8   &kp N9   &none    &kp PLUS   &kp MINUS
-&kp CAPS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp N4      &kp N5   &kp N6   &none    &kp ASTRK  &kp SLASH
-&kp PSCRN  &none     &none     &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N1      &kp N2   &kp N3   &none    &kp EQUAL  &trans
-                               &trans     &trans                &trans                   &trans      &kp N0
-                                          &trans                &trans                   &kp PERIOD
+&kp F12   &CAC F1   &CAC F2   &CAC F3    &CAC F4               &CAC F5                  &CAC F6     &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
+&none     &none     &kp UP    &none      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp N7      &kp N8   &kp N9   &none    &kp PLUS   &kp MINUS
+&kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp N4      &kp N5   &kp N6   &none    &kp ASTRK  &kp SLASH
+&trans    &none     &none     &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp N1      &kp N2   &kp N3   &none    &kp EQUAL  &trans
+                              &trans     &trans                &trans                   &trans      &kp N0
+                                         &trans                &trans                   &kp PERIOD
             >;
         };
 
@@ -289,12 +289,12 @@
             label = "RAISE";
             display-name = "Raise";
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7   &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &none   &none   &none   &none   &none     &CA Y       &none    &none   &none   &none    &none
-&trans   &CA A   &none   &none   &none   &none     &none       &none    &none   &none   &none    &none
-&trans   &CA Z   &CA X   &CA C   &CA V   &none     &none       &none    &none   &none   &none    &trans
-                         &trans  &trans  &trans    &kp HOME    &kp END
-                                 &trans  &trans    &kp INSERT
+&kp F12   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7   &kp F8  &kp F9  &kp F10  &kp F11
+&kp CAPS  &none   &none   &none   &none   &none     &CA Y       &none    &none   &none   &none    &none
+&trans    &CA A   &none   &none   &none   &none     &none       &none    &none   &none   &none    &none
+&trans    &CA Z   &CA X   &CA C   &CA V   &none     &none       &none    &none   &none   &none    &trans
+                          &trans  &trans  &trans    &kp HOME    &kp END
+                                  &trans  &trans    &kp INSERT
             >;
         };
 
