@@ -129,6 +129,18 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        cht: cht {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
+            require-prior-idle-ms = <100>;
+            bindings = <&kp>, <&kp>;
+
+            label = "custom hold tab";
+        };
     };
 
     macros {
@@ -250,12 +262,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1              &kp N2          &kp N3          &kp N4        &kp N5                 &kp N6            &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
-&kp TAB    &kp Q               &kp W           &kp E           &kp R         &kp T                  &kp Y             &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
-&kp LSHFT  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LSHIFT F  &kp G                  &kp H             &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LCTRL  &lt 1 Z             &kp X           &kp C           &kp V         &kp B                  &kp N             &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp LEFT_ALT
-                                               &kp LWIN        &kp SPACE     &blt 3 LEFT_CONTROL    &blt 2 BACKSPACE  &blt 4 SPACE
-                                                               &kp DEL       &kp BACKSPACE          &kp RET
+&kp ESC    &kp N1               &kp N2           &kp N3           &kp N4         &kp N5                 &kp N6            &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
+&kp TAB    &kp Q                &kp W            &kp E            &kp R          &kp T                  &kp Y             &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
+&kp LSHFT  &cht LEFT_CONTROL A  &cht LEFT_ALT S  &cht LEFT_WIN D  &cht LSHIFT F  &kp G                  &kp H             &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LCTRL  &lt 1 Z              &kp X            &kp C            &kp V          &kp B                  &kp N             &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp LEFT_ALT
+                                                 &kp LWIN         &kp SPACE      &blt 3 LEFT_CONTROL    &blt 2 BACKSPACE  &blt 4 SPACE
+                                                                  &kp DEL        &kp BACKSPACE          &kp RET
             >;
         };
 
