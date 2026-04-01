@@ -167,11 +167,11 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL &kp LALT &macro_param_1to1>,
+                <&kp LCTRL &macro_param_1to1>,
                 <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
-                <&kp LCTRL &kp LALT>;
+                <&kp LCTRL>;
         };
 
         // Hold Ctrl+Cmd+Left Click while key is pressed (for mouse drag window actions)
@@ -290,9 +290,9 @@
             display-name = "Raise";
             bindings = <
 &kp F12  &kp F1  &kp F2      &kp F3        &kp F4         &kp F5           &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)    &kp C_MUTE  &none   &none   &none   &none    &none
-&trans   &none   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)       &kp INSERT  &none   &none   &none   &none    &none
-&trans   &none   &none       &kp C_VOL_DN  &none          &none            &none       &none   &none   &none   &none    &none
+&trans   &trans  &CAC W      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)    &CA Y       &none   &none   &none   &none    &none
+&trans   &CA A   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)       &kp INSERT  &none   &none   &none   &none    &none
+&trans   &CA Z   &CA X       &CA C         &CA V          &none            &none       &none   &none   &none   &none    &none
                              &trans        &trans         &trans           &trans      &trans
                                            &trans         &trans           &trans
             >;
