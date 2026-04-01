@@ -263,12 +263,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3    &kp F4    &kp F5      &kp F6         &kp F7    &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &none   &none   &none     &none     &none       &kp PAGE_UP    &none     &none   &none   &none    &none
-&trans   &none   &none   &none     &none     &none       &kp PAGE_DOWN  &none     &none   &none   &none    &none
-&trans   &none   &none   &none     &none     &none       &none          &none     &none   &none   &none    &trans
-                         &mkp MB1  &mkp MB3  &mkp MB2    &mkp MB4       &mkp MB5
-                                   &mo 6     &mo 5       &mkp MB1
+&kp F12  &kp F1            &kp F2                             &kp F3        &kp F4             &kp F5             &kp F6         &kp F7      &kp F8    &kp F9         &kp F10            &kp F11
+&trans   &none             &none                              &none         &none              &none              &kp PAGE_UP    &none       &none     &none          &none              &none
+&trans   &kp LEFT_CONTROL  &kp LEFT_ALT                       &kp LEFT_WIN  &kp LSHFT          &none              &kp PAGE_DOWN  &kp RSHIFT  &kp RWIN  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none
+&trans   &kp PSCRN         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none          &none       &none     &none          &none              &trans
+                                                              &mkp MB1      &mkp MB3           &mkp MB2           &mkp MB4       &mkp MB5
+                                                                            &mo 6              &mo 5              &mkp MB1
             >;
         };
 
@@ -290,8 +290,8 @@
             display-name = "Raise";
             bindings = <
 &kp F12   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7   &kp F8  &kp F9  &kp F10  &kp F11
-&kp CAPS  &none   &none   &none   &none   &none     &CA Y       &none    &none   &CA O   &none    &none
-&trans    &CA A   &CA S   &none   &none   &none     &none       &none    &none   &none   &none    &none
+&trans    &none   &none   &none   &none   &none     &CA Y       &none    &none   &CA O   &none    &none
+&kp CAPS  &CA A   &CA S   &none   &none   &none     &none       &none    &none   &none   &none    &none
 &trans    &CA Z   &CA X   &CA C   &CA V   &none     &none       &none    &none   &none   &none    &trans
                           &trans  &trans  &trans    &kp HOME    &kp END
                                   &trans  &trans    &kp INSERT
