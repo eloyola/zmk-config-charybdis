@@ -219,12 +219,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp GRAVE       &kp N1              &kp N2          &kp N3          &kp N4            &kp N5           &kp N6           &kp N7       &kp N8      &kp N9           &kp N0                  &kp MINUS
-&kp TAB         &kp Q               &kp W           &kp E           &kp R             &kp T            &kp Y            &kp U        &kp I       &kp O            &kp P                   &kp EQUAL
-&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LSHIFT F      &kp G            &kp H            &mt RSHFT J  &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
-&kp LEFT_SHIFT  &lt 1 Z             &kp X           &kp C           &kp V             &kp B            &kp N            &kp M        &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp RIGHT_SHIFT
-                                                    &kp LWIN        &kp LEFT_CONTROL  &lt 3 TAB        &lt 2 BACKSPACE  &kp SPACE
-                                                                    &kp DEL           &kp BACKSPACE    &kp RET
+&kp GRAVE       &kp N1              &kp N2          &kp N3          &kp N4        &kp N5                &kp N6           &kp N7        &kp N8      &kp N9           &kp N0                  &kp MINUS
+&kp TAB         &kp Q               &kp W           &kp E           &kp R         &kp T                 &kp Y            &kp U         &kp I       &kp O            &kp P                   &kp EQUAL
+&kp ESCAPE      &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LSHIFT F  &kp G                 &kp H            &mt RSHFT J   &mt RWIN K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMI  &kp SQT
+&kp LEFT_SHIFT  &lt 1 Z             &kp X           &kp C           &kp V         &kp B                 &kp N            &kp M         &kp COMMA   &kp PERIOD       &lt 3 SLASH             &kp RIGHT_SHIFT
+                                                    &kp LWIN        &kp SPACE     &lt 3 LEFT_CONTROL    &lt 2 BACKSPACE  &blt 4 SPACE
+                                                                    &kp DEL       &kp BACKSPACE         &kp RET
             >;
         };
 
@@ -245,12 +245,12 @@
             label = "LOWER";
             display-name = "Lower";
             bindings = <
-&kp F12    &CAC F1  &CAC F2         &CAC F3         &CAC F4          &CAC F5                 &CAC F6                &CAC F7          &CAC F8          &CAC F9          &CAC F10  &kp F11
-&none      &none    &none           &kp UP_ARROW    &none            &kp LEFT_BRACE          &kp RIGHT_BRACE        &CA U            &CA I            &CA O            &kp PLUS  &kp MINUS
-&kp PSCRN  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N4           &CA K            &CA L            &CA SEMI  &CA SQT
-&trans     &none    &none           &none           &none            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &CA FSLH  &trans
-                                    &trans          &trans           &trans                  &trans                 &kp KP_N0
-                                                    &trans           &trans                  &trans
+&kp F12    &CAC F1  &CAC F2         &CAC F3         &CAC F4          &CAC F5                 &CAC F6                &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
+&none      &none    &none           &kp UP_ARROW    &none            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp N7   &kp N8   &kp N9   &kp PLUS   &kp MINUS
+&kp PSCRN  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp N4   &kp N5   &kp N6   &kp ASTRK  &kp SLASH
+&kp CAPS   &none    &none           &none           &none            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N1   &kp N2   &kp N3   &kp EQUAL  &trans
+                                    &trans          &trans           &trans                  &trans                 &kp N0
+                                                    &trans           &trans                  &kp PERIOD
             >;
         };
 
