@@ -263,12 +263,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&kp F12  &kp F1            &kp F2                             &kp F3        &kp F4             &kp F5             &kp F6         &kp F7      &kp F8    &kp F9         &kp F10            &kp F11
-&trans   &none             &none                              &none         &none              &none              &kp PAGE_UP    &none       &none     &none          &none              &none
-&trans   &kp LEFT_CONTROL  &kp LEFT_ALT                       &kp LEFT_WIN  &kp LSHFT          &none              &kp PAGE_DOWN  &kp RSHIFT  &kp RWIN  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none
-&trans   &kp PSCRN         &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none          &none       &none     &none          &none              &trans
-                                                              &mkp MB1      &mkp MB3           &mkp MB2           &mkp MB4       &mkp MB5
-                                                                            &mo 6              &mo 5              &mkp MB1
+&kp F12  &kp F1            &kp F2        &kp F3        &kp F4             &kp F5             &kp F6         &kp F7      &kp F8    &kp F9         &kp F10            &kp F11
+&trans   &none             &none         &none         &none              &none              &kp PAGE_UP    &none       &none     &none          &none              &none
+&trans   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LSHFT          &none              &kp PAGE_DOWN  &kp RSHIFT  &kp RWIN  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none
+&trans   &none             &none         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none          &none       &none     &none          &none              &trans
+                                         &mkp MB1      &mkp MB3           &mkp MB2           &mkp MB4       &mkp MB5
+                                                       &mo 6              &mo 5              &mkp MB1
             >;
         };
 
@@ -276,12 +276,12 @@
             label = "LOWER";
             display-name = "Lower";
             bindings = <
-&kp F12   &CAC F1   &CAC F2   &CAC F3    &CAC F4               &CAC F5                  &CAC F6          &CAC F7          &CAC F8          &CAC F9  &CAC F10   &kp F11
-&none     &none     &kp UP    &none      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp N7           &kp N8           &kp N9           &none    &kp PLUS   &kp MINUS
-&kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp N4           &kp N5           &kp N6           &none    &kp ASTRK  &kp SLASH
-&trans    &none     &none     &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none    &kp EQUAL  &trans
-                              &trans     &trans                &trans                   &trans           &kp N0
-                                         &trans                &trans                   &kp PERIOD
+&kp F12   &CAC F1  &CAC F2   &CAC F3   &CAC F4    &CAC F5    &CAC F6     &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
+&none     &none    &none     &kp UP    &none      &none      &kp N7      &kp N8   &kp N9   &none    &kp PLUS   &kp MINUS
+&kp CAPS  &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none      &kp N4      &kp N5   &kp N6   &none    &kp ASTRK  &kp SLASH
+&trans    &none    &none     &none     &none      &none      &kp N1      &kp N2   &kp N3   &none    &kp EQUAL  &trans
+                             &trans    &trans     &trans     &trans      &kp N0
+                                       &trans     &trans     &kp PERIOD
             >;
         };
 
@@ -302,12 +302,12 @@
             label = "SYMBOLS";
             display-name = "Symbols";
             bindings = <
-&kp GRAVE  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans    &trans    &trans     &trans
-&none      &kp SQT    &kp LT     &kp GT     &kp DQT    &kp DOT      &kp COMMA  &kp AMPS   &kp LBKT  &kp RBKT  &kp PRCNT  &euro
-&trans     &kp EXCL   &kp MINUS  &kp PLUS   &kp EQUAL  &kp UNDER    &kp PIPE   &kp COLON  &kp LPAR  &kp RPAR  &kp QMARK  &pound
-&trans     &kp CARET  &kp FSLH   &kp ASTRK  &kp BSLH   &kp HASH     &kp TILDE  &kp DLLR   &kp LBRC  &kp RBRC  &kp AT     &trans
-                                 &trans     &trans     &trans       &trans     &trans
-                                            &trans     &trans       &trans
+&kp GRAVE  &trans     &trans             &trans           &trans        &trans                  &trans                 &trans      &trans         &trans            &trans     &trans
+&none      &kp SQT    &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COMMA   &kp SEMI       &kp COLON         &kp TILDE  &none
+&trans     &kp MINUS  &kp PLUS           &kp ASTERISK     &kp PERCENT   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp DOLLAR  &euro          &pound            &kp HASH   &kp AT
+&trans     &kp CARET  &kp FSLH           &kp BACKSLASH    &kp PIPE      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDER   &kp LESS_THAN  &kp GREATER_THAN  &none      &trans
+                                         &trans           &trans        &trans                  &trans                 &trans
+                                                          &trans        &trans                  &trans
             >;
         };
 
