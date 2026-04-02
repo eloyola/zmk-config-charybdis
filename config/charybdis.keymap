@@ -164,6 +164,13 @@
             label = "HT_GUI";
             retro-tap;
         };
+
+        scroll_up_down: scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <250>;
+        };
     };
 
     macros {
@@ -280,7 +287,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-
+        sensor-bindings = <&scroll_up_down>; 
         base_layer {
             label = "BASE";
             display-name = "Base";
