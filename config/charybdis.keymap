@@ -294,10 +294,10 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1          &lt 1 N2         &kp N3               &kp N4              &kp N5           &kp N6            &kp N7             &kp N8                &lt 1 N9          &kp N0             &kp MINUS
+&kp ESC           &kp N1          &kp N2           &kp N3               &kp N4              &kp N5           &kp N6            &kp N7             &kp N8                &kp N9            &kp N0             &kp MINUS
 &kp TAB           &kp Q           &kp W            &kp E                &kp R               &kp T            &kp Y             &kp U              &kp I                 &kp O             &kp P              &kp EQUAL
 &kp LEFT_CONTROL  &ht_gui LWIN A  &htl LEFT_ALT S  &htl LEFT_CONTROL D  &hold_tap LSHIFT F  &kp G            &kp H             &hold_tap RSHFT J  &htl RIGHT_CONTROL K  &htl RIGHT_ALT L  &ht_gui RWIN SEMI  &kp SQT
-&kp LSHFT         &kp Z           &kp X            &kp C                &kp V               &kp B            &kp N             &kp M              &kp COMMA             &kp PERIOD        &kp SLASH          &kp LEFT_ALT
+&kp LSHFT         &kp Z           &lt 1 X          &kp C                &kp V               &kp B            &kp N             &kp M              &kp COMMA             &lt 1 PERIOD      &kp SLASH          &kp LEFT_ALT
                                                    &kp LWIN             &kp DELETE          &blt 2 DELETE    &blt 3 BACKSPACE  &kp SPACE
                                                                         &kp SPACE           &kp BACKSPACE    &kp RET
             >;
@@ -307,10 +307,10 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &none       &none          &kp RIGHT_CONTROL  &mo 4              &none          &none     &none
-&trans  &none     &none         &mo 5             &none             &none       &kp PAGE_UP    &none              &mo 5              &none          &none     &none
-&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &none       &kp C_PP       &kp RSHIFT         &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
-&trans  &none     &none         &none             &none             &none       &kp PAGE_DOWN  &none              &none              &none          &none     &none
+&trans  &none     &none         &none             &none             &none       &none          &none       &none              &none          &none     &none
+&trans  &none     &none         &none             &none             &none       &kp PAGE_UP    &none       &none              &none          &none     &none
+&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &none       &kp C_PP       &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
+&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5       &kp PAGE_DOWN  &none       &none              &none          &none     &none
                                 &mkp MB1          &mkp MB4          &mkp MB5    &mkp MB3       &mkp MB2
                                                   &mkp MB3          &mkp MB2    &mkp MB1
             >;
