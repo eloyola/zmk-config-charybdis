@@ -328,7 +328,7 @@
 &none      &kp SQT    &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COMMA   &kp SEMI       &kp COLON         &kp TILDE  &none
 &trans     &kp MINUS  &kp PLUS           &kp ASTERISK     &kp PERCENT   &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp DOLLAR  &euro          &pound            &kp HASH   &kp AT
 &trans     &kp CARET  &kp FSLH           &kp BACKSLASH    &kp PIPE      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDER   &kp LESS_THAN  &kp GREATER_THAN  &none      &trans
-                                         &trans           &trans        &trans                  &trans                 &trans
+                                         &kp HOME         &trans        &kp END                 &trans                 &trans
                                                           &trans        &trans                  &trans
             >;
         };
