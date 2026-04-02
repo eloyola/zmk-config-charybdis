@@ -285,12 +285,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1          &kp N2           &kp N3               &kp N4              &kp N5                 &kp N6            &kp N7             &kp N8                &kp N9            &kp N0             &kp MINUS
-&kp TAB           &kp Q           &kp W            &kp E                &kp R               &kp T                  &kp Y             &kp U              &kp I                 &kp O             &kp P              &kp EQUAL
-&kp LEFT_CONTROL  &ht_gui LWIN A  &htl LEFT_ALT S  &htl LEFT_CONTROL D  &hold_tap LSHIFT F  &kp G                  &kp H             &hold_tap RSHFT J  &htl RIGHT_CONTROL K  &htl RIGHT_ALT L  &ht_gui RWIN SEMI  &kp SQT
-&kp LSHFT         &lt 1 Z         &kp X            &kp C                &kp V               &kp B                  &kp N             &kp M              &kp COMMA             &kp PERIOD        &kp SLASH          &kp LEFT_ALT
-                                                   &kp LWIN             &kp SPACE           &blt 3 LEFT_CONTROL    &blt 2 BACKSPACE  &kp SPACE
-                                                                        &kp DEL             &kp BACKSPACE          &kp RET
+&kp ESC           &kp N1          &kp N2           &kp N3               &kp N4              &kp N5           &kp N6            &kp N7             &kp N8                &kp N9            &kp N0             &kp MINUS
+&kp TAB           &kp Q           &kp W            &kp E                &kp R               &kp T            &kp Y             &kp U              &kp I                 &kp O             &kp P              &kp EQUAL
+&kp LEFT_CONTROL  &ht_gui LWIN A  &htl LEFT_ALT S  &htl LEFT_CONTROL D  &hold_tap LSHIFT F  &kp G            &kp H             &hold_tap RSHFT J  &htl RIGHT_CONTROL K  &htl RIGHT_ALT L  &ht_gui RWIN SEMI  &kp SQT
+&kp LSHFT         &lt 1 Z         &kp X            &kp C                &kp V               &kp B            &kp N             &kp M              &kp COMMA             &kp PERIOD        &kp SLASH          &kp LEFT_ALT
+                                                   &kp LWIN             &kp DELETE          &blt 2 DELETE    &blt 3 BACKSPACE  &kp SPACE
+                                                                        &kp SPACE           &kp BACKSPACE    &kp RET
             >;
         };
 
@@ -298,12 +298,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&kp F12  &kp F1    &kp F2        &kp F3            &kp F4             &kp F5             &kp F6         &kp F7      &kp F8             &kp F9         &kp F10   &kp F11
-&trans   &none     &none         &none             &none              &none              &kp PAGE_UP    &none       &none              &none          &none     &none
-&trans   &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT          &none              &kp PAGE_DOWN  &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
-&trans   &none     &none         &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &none          &none       &none              &none          &none     &trans
-                                 &mkp MB1          &mkp MB3           &mkp MB2           &mkp MB4       &mkp MB5
-                                                   &mo 4              &mo 5              &mkp MB1
+&kp F12  &kp F1    &kp F2        &kp F3            &kp F4     &kp F5      &kp F6         &kp F7      &kp F8             &kp F9         &kp F10   &kp F11
+&trans   &none     &none         &none             &none      &none       &kp PAGE_UP    &none       &none              &none          &none     &mkp MB5
+&trans   &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none       &kp PAGE_DOWN  &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
+&trans   &none     &none         &none             &none      &none       &kp C_PP       &none       &none              &none          &none     &mkp MB4
+                                 &kp LSHIFT        &mo 5      &mo 4       &mkp MB3       &mkp MB2
+                                                   &mkp MB1   &mkp MB2    &mkp MB1
             >;
         };
 
@@ -311,12 +311,12 @@
             label = "RAISE";
             display-name = "Lower";
             bindings = <
-&kp F12   &CAC F1  &CAC F2   &CAC F3   &CAC F4    &CAC F5    &CAC F6     &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
-&none     &none    &none     &kp UP    &none      &none      &kp N7      &kp N8   &kp N9   &none    &kp PLUS   &kp MINUS
-&none     &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none      &kp N4      &kp N5   &kp N6   &none    &kp ASTRK  &kp SLASH
-&kp CAPS  &none    &none     &none     &none      &none      &kp N1      &kp N2   &kp N3   &none    &kp EQUAL  &trans
-                             &trans    &trans     &trans     &trans      &kp N0
-                                       &trans     &trans     &kp PERIOD
+&kp F12   &CAC F1  &CAC F2   &CAC F3   &CAC F4    &CAC F5              &CAC F6     &CAC F7  &CAC F8  &CAC F9  &CAC F10   &kp F11
+&none     &none    &none     &kp UP    &none      &kp C_VOLUME_UP      &kp N7      &kp N8   &kp N9   &none    &kp PLUS   &kp MINUS
+&none     &none    &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_MUTE           &kp N4      &kp N5   &kp N6   &none    &kp ASTRK  &kp SLASH
+&kp CAPS  &none    &none     &none     &none      &kp C_VOLUME_DOWN    &kp N1      &kp N2   &kp N3   &none    &kp EQUAL  &trans
+                             &trans    &trans     &trans               &trans      &kp N0
+                                       &trans     &trans               &kp PERIOD
             >;
         };
 
