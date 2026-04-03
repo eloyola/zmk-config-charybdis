@@ -307,12 +307,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&trans  &none     &none         &none             &none             &none       &none        &none       &none              &none          &none     &none
-&trans  &none     &none         &none             &none             &none       &kp PAGE_UP  &none       &none              &none          &none     &none
-&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &none       &kp C_PP     &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
-&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5       &mkp MB1     &mkp MB2    &mkp MB3           &none          &none     &none
-                                &mkp MB1          &mkp MB3          &mkp MB2    &mkp MB3     &mkp MB2
-                                                  &mkp MB4          &mkp MB5    &mkp MB1
+&trans  &none     &none         &none             &none             &none       &none     &none       &none              &none          &none     &none
+&trans  &none     &none         &none             &none             &none       &mkp MB4  &mkp MB5    &none              &none          &none     &none
+&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &none       &kp C_PP  &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
+&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5       &mkp MB1  &mkp MB2    &mkp MB3           &none          &none     &none
+                                &mkp MB1          &mkp MB3          &mkp MB2    &mkp MB3  &mkp MB2
+                                                  &none             &none       &mkp MB1
             >;
         };
 
