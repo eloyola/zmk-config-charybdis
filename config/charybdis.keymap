@@ -294,12 +294,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1          &kp N2           &kp N3               &kp N4              &kp N5          &kp N6         &kp N7        &kp N8                &kp N9            &kp N0          &kp MINUS
-&kp TAB           &kp Q           &kp W            &kp E                &kp R               &kp T           &kp Y          &kp U         &kp I                 &kp O             &kp P           &kp EQUAL
-&kp LEFT_CONTROL  &ht_gui LWIN A  &htl LEFT_ALT S  &htl LEFT_CONTROL D  &hold_tap LSHIFT F  &kp G           &kp H          &hmr RSHFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RWIN SEMI  &kp SQT
-&kp LSHFT         &kp Z           &lt 1 X          &kp C                &kp V               &kp B           &kp N          &kp M         &kp COMMA             &lt 1 PERIOD      &kp SLASH       &kp RIGHT_SHIFT
-                                                   &kp BACKSPACE        &kp LEFT_CONTROL    &kp LEFT_ALT    &kp LWIN       &kp SPACE
-                                                                        &kp SPACE           &blt 2 DEL      &blt 3 RETURN
+&kp ESC           &kp N1       &kp N2           &kp N3               &kp N4            &kp N5          &kp N6         &kp N7        &kp N8                &kp N9            &kp N0          &kp MINUS
+&kp TAB           &kp Q        &kp W            &kp E                &kp R             &kp T           &kp Y          &kp U         &kp I                 &kp O             &kp P           &kp EQUAL
+&kp LEFT_CONTROL  &hml LWIN A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LSHIFT F     &kp G           &kp H          &hmr RSHFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RWIN SEMI  &kp SQT
+&kp LSHFT         &kp Z        &lt 1 X          &kp C                &kp V             &kp B           &kp N          &kp M         &kp COMMA             &lt 1 PERIOD      &kp SLASH       &kp RIGHT_SHIFT
+                                                &kp BACKSPACE        &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LWIN       &kp SPACE
+                                                                     &kp SPACE         &blt 2 DEL      &blt 3 RETURN
             >;
         };
 
@@ -310,7 +310,7 @@
 &trans  &none     &none         &none             &none             &none       &none     &none       &none              &none          &none     &none
 &trans  &none     &none         &none             &none             &none       &mkp MB4  &mkp MB5    &none              &none          &none     &none
 &trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &none       &kp C_PP  &kp RSHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RWIN  &none
-&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5       &mkp MB1  &mkp MB2    &mkp MB3           &none          &none     &none
+&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5       &mkp MB1  &mkp MB2    &mkp MB3           &none          &none     &trans
                                 &mkp MB1          &mkp MB3          &mkp MB2    &mkp MB3  &mkp MB2
                                                   &none             &none       &mkp MB1
             >;
@@ -320,12 +320,12 @@
             label = "RAISE";
             display-name = "Lower";
             bindings = <
-&kp F12   &kp F1  &kp F2    &kp F3      &kp F4             &kp F5             &kp F6      &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
-&none     &none   &none     &kp UP      &none              &none              &kp N7      &kp N8  &kp N9  &none   &kp PLUS   &kp MINUS
-&none     &none   &kp LEFT  &kp DOWN    &kp RIGHT          &none              &kp N4      &kp N5  &kp N6  &none   &kp ASTRK  &kp SLASH
-&kp CAPS  &none   &none     &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp N1      &kp N2  &kp N3  &none   &kp EQUAL  &kp CAPS
-                            &trans      &trans             &trans             &trans      &kp N0
-                                        &trans             &trans             &kp PERIOD
+&kp F12   &kp F1  &kp F2          &kp F3          &kp F4             &kp F5             &kp F6      &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
+&none     &none   &none           &none           &none              &none              &kp N7      &kp N8  &kp N9  &none   &kp PLUS   &kp MINUS
+&none     &none   &none           &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp N4      &kp N5  &kp N6  &none   &kp ASTRK  &kp SLASH
+&kp CAPS  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp C_MUTE         &kp N1      &kp N2  &kp N3  &none   &kp EQUAL  &kp CAPS
+                                  &trans          &trans             &trans             &trans      &kp N0
+                                                  &trans             &trans             &kp PERIOD
             >;
         };
 
