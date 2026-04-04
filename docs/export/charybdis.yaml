@@ -50,13 +50,13 @@ layers:
   - /
   - RIGHT SHIFT
   - SPACE
-  - BACKSPACE
+  - DELETE
   - LEFT ALT
   - LWIN
-  - SPACE
+  - RET
   - LEFT CONTROL
-  - {t: DEL, h: Lower}
-  - {t: RETURN, h: Symbols}
+  - {t: BACKSPACE, h: Lower}
+  - {t: SPACE, h: Symbols}
   Pointer:
   - {t: ▽, type: trans}
   - ''
@@ -141,9 +141,9 @@ layers:
   - '-'
   - ''
   - ''
-  - ''
+  - HOME
   - UP ARROW
-  - VOLUME DOWN
+  - END
   - VOLUME UP
   - '4'
   - '5'
@@ -156,20 +156,20 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - MUTE
+  - VOLUME DOWN
   - '1'
   - '2'
   - '3'
   - ''
   - '='
-  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - MUTE
   - '0'
-  - HOME
-  - {t: END, type: held}
+  - ''
+  - {type: held}
   - .
   Symbols:
   - F12
