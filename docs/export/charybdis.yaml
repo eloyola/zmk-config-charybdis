@@ -157,9 +157,9 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - VOLUME DOWN
-  - '1'
-  - '2'
-  - '3'
+  - {t: '1', h: RSHIFT}
+  - {t: '2', h: RIGHT CONTROL}
+  - {t: '3', h: RALT}
   - ''
   - '='
   - {t: ▽, type: trans}
