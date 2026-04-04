@@ -377,8 +377,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
@@ -626,8 +626,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
@@ -867,8 +867,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1111,8 +1111,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1352,8 +1352,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
@@ -1593,14 +1593,14 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 2352)" class="layer-ddf">
-<text x="0" y="28" class="label" id="ddf">ddf:</text>
+<g transform="translate(30, 2352)" class="layer-Config">
+<text x="0" y="28" class="label" id="Config">Config:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1869,8 +1869,8 @@ path.combo {
 <path d="M401,252 l-75,0" class="combo"/>
 <path d="M401,252 l56,0" class="combo"/>
 <rect rx="6" ry="6" x="387" y="239" width="28" height="26" class="combo"/>
-<a href="#ddf">
-<text x="401" y="252" class="combo tap layer-activator">ddf</text>
+<a href="#Config">
+<text x="401" y="252" class="combo tap layer-activator">Config</text>
 </a><text x="401" y="263" class="combo hold">toggle</text>
 </g>
 </g>

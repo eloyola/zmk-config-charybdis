@@ -342,7 +342,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ddf:
+  Config:
   - ESC
   - KP 1
   - KP 2
@@ -403,4 +403,4 @@ combos:
 - p: [53, 54, 55]
   k: '&studio_unlock'
 - p: [50, 51, 52]
-  k: {t: ddf, h: toggle}
+  k: {t: Config, h: toggle}
