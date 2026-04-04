@@ -168,8 +168,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
-  - {type: held}
+  - HOME
+  - {t: END, type: held}
   - .
   Symbols:
   - F12
@@ -358,9 +358,9 @@ layers:
   - ''
   - ''
   - ''
-  - VOL UP
-  - Gui+-
-  - Gui+=
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -372,7 +372,7 @@ layers:
   - PREV
   - PP
   - NEXT
-  - Gui+0
+  - ''
   - F23
   - F24
   - {t: RGB BRI, s: RGB BRD}
@@ -382,7 +382,7 @@ layers:
   - ''
   - RGB ON
   - RGB BRI
-  - VOL DN
+  - ''
   - RGB EFF
   - ''
   - BT CLR
