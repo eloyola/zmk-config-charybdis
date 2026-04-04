@@ -31,9 +31,6 @@ This configuration supports two modes:
     - [Projects Section](#projects-section)
     - [Self Section](#self-section)
   - [Keymap](#keymap)
-  - [RGB LED Configuration](#rgb-led-configuration)
-    - [Change LED Data Pin](#change-led-data-pin)
-    - [Change LED Count Per Side](#change-led-count-per-side)
   - [Trackball Sensitivity Configuration](#trackball-sensitivity-configuration)
     - [Hardware Sensor Sensitivity (CPI/DPI)](#hardware-sensor-sensitivity-cpidpi)
     - [Software Scaling (Movement Speed)](#software-scaling-movement-speed)
@@ -57,9 +54,10 @@ This configuration supports two modes:
 
 ## BOM
 
-See the full [Bill of Materials](/docs/bom/readme.md) for electronics, PCBs, fabrication files (ready-to-upload gerbers for PCBWay/JLCPCB), and 3D print files.
+<details>
+  <summary>Detail ...</summary>
 
-RGB parts (SK6812 LEDs, 1uF capacitors, and 330 Ohm resistors) are documented there as **optional**.
+See the full [Bill of Materials](/docs/bom/readme.md) for electronics, PCBs, fabrication files (ready-to-upload gerbers for PCBWay/JLCPCB), and 3D print files.
 
 ### Additional Components for Dongle Mode
 
@@ -83,7 +81,8 @@ RGB parts (SK6812 LEDs, 1uF capacitors, and 330 Ohm resistors) are documented th
 - Uses [zmk-dongle-screen](https://github.com/janpfischer/zmk-dongle-screen) module (YADS) *(currently disabled - Zephyr 4.1 compatibility pending)*
 - Alternative firmware for Prospector hardware with different features
 
-![Wireless Keyboard](/docs/picture/wireless-charybdis.png)
+</details>
+
 
 ## Tester Pro Micro Shield
 
@@ -101,6 +100,9 @@ The tester runs in USB-only mode (no BLE) and includes two physical layouts for 
 
 ## Repository Structure
 
+<details>
+  <summary>Detail ...</summary>
+
 ```text
 zmk-config-charybdis/
 ├── boards/                          # Module-based shields (Zephyr 4.1+ recommended layout)
@@ -109,9 +111,8 @@ zmk-config-charybdis/
 │       │   ├── charybdis.dtsi                        # Common device tree (keyboard layout, kscan)
 │       │   ├── charybdis_layers.h                    # Shared layer definitions
 │       │   ├── charybdis_trackball_processors.dtsi   # Shared trackball processing config
-│       │   ├── charybdis_rgb.dtsi                    # Shared RGB underglow/per-key LED config
 │       │   ├── charybdis_right_common.dtsi           # Shared right keyboard hardware config
-│       │   ├── charybdis_left.conf                   # Left side Kconfig options (left-specific only)
+│       │   ├── charybdis_left.conf                   # Left side Kconfig options (empty)
 │       │   ├── charybdis_left.overlay                # Left side device tree overlay
 │       │   ├── charybdis_right_standalone.conf       # Right side Kconfig (standalone mode)
 │       │   ├── charybdis_right_standalone.overlay    # Right side overlay (standalone mode)
@@ -173,7 +174,6 @@ zmk-config-charybdis/
 
 - **`charybdis_layers.h`**: Layer definitions (BASE, POINTER, LOWER, RAISE, SYMBOLS, SCROLL, SNIPING) used across all shields
 - **`charybdis_trackball_processors.dtsi`**: Shared trackball input processing configurations (snipe/scroll/move modes)
-- **`charybdis_rgb.dtsi`**: Shared RGB LED bus/device configuration (SPI, LED strip node, `zmk,underglow` chosen node)
 - **`charybdis_right_common.dtsi`**: Common hardware config for both right keyboard variants (GPIO, SPI, trackball device)
 - **`dongle_charybdis_right.conf`**: Symlink to `charybdis_right_standalone.conf` (identical hardware config)
 
@@ -191,6 +191,9 @@ zmk-config-charybdis/
 - **`dongle_nice_32.overlay`**: Nice!Nano dongle with 128x32 OLED display
 - **`dongle_nice_64.overlay`**: Nice!Nano dongle with 128x64 OLED display
 - **`config/west.yml`**: Defines external dependencies (see West.yml section below)
+
+</details>
+
 
 ## Operating Modes
 
@@ -361,49 +364,9 @@ self:
 
 ## Keymap
 
-Can be updated at [/config/charybdis.keymap](/config/charybdis.keymap) and rendered with [render.sh](/docs/keymap/render.sh)
-
 Generated with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer-web/)
 
-![Keymap](/docs/keymap/keymap.svg)
-
-## RGB LED Configuration
-
-### Change LED Data Pin
-
-To change the RGB LED data pin, edit:
-
-- [`boards/shields/charybdis/charybdis_rgb.dtsi`](/boards/shields/charybdis/charybdis_rgb.dtsi)
-
-Find these lines and update the `NRF_PSEL(SPIM_MOSI, <port>, <pin>)` value:
-
-```dts
-spi3_default: spi3_default {
-    group1 {
-        psels = <NRF_PSEL(SPIM_MOSI, 1, 13)>;
-    };
-};
-```
-
-```dts
-spi3_sleep: spi3_sleep {
-    group1 {
-        psels = <NRF_PSEL(SPIM_MOSI, 1, 13)>;
-        low-power-enable;
-    };
-};
-```
-
-Current default is Pro Micro `D15` on nice!nano v2 (`P1.13`).
-
-### Change LED Count Per Side
-
-The per-side LED count is set where the shared RGB include is used:
-
-- Left side: [`boards/shields/charybdis/charybdis_left.overlay`](/boards/shields/charybdis/charybdis_left.overlay)  
-  `#define CHARYBDIS_RGB_CHAIN_LENGTH 29`
-- Right side: [`boards/shields/charybdis/charybdis_right_common.dtsi`](/boards/shields/charybdis/charybdis_right_common.dtsi)  
-  `#define CHARYBDIS_RGB_CHAIN_LENGTH 27`
+![Keymap](/docs/export/charybdis.svg)
 
 ## Trackball Sensitivity Configuration
 
@@ -611,7 +574,7 @@ Built firmware files are automatically copied to `manual_build/artifacts/output/
 
 2. Flash `charybdis_left-nice_nano-zmk.uf2` to the left keyboard
 3. Flash `dongle_charybdis_right-nice_nano-zmk.uf2` to the right keyboard
-4. **Important**: Pair the left keyboard to the dongle first, then pair the right keyboard (paring occurs when reset firmware is flashed prior to main firmware). Just ensure to follow two previous steps in order (left first, then right) and the battery status will display correctly on the dongle.
+4. **Important**: Pair the left keyboard to the dongle first, then pair the right keyboard
 
 ### Tester Pro Micro (GPIO Testing)
 
