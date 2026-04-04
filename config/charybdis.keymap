@@ -281,7 +281,7 @@
 
         combo_config_toggle {
             timeout-ms = <50>;
-            key-positions = <49 55 54>;
+            key-positions = <50 51 52>;
             bindings = <&tog 6>;
         };
     };
