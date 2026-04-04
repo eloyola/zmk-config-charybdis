@@ -279,7 +279,7 @@
 
         // Gaming layer toggle combo - keys 49, 55, 54
 
-        combo_config_toggle {
+        combo_config {
             timeout-ms = <50>;
             key-positions = <50 51 52>;
             bindings = <&tog 6>;
