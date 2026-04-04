@@ -1,0 +1,406 @@
+layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
+layers:
+  Base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '='
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - {t: X, h: Pointer}
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - {t: ., h: Pointer}
+  - /
+  - RIGHT SHIFT
+  - SPACE
+  - BACKSPACE
+  - LEFT ALT
+  - LWIN
+  - SPACE
+  - LEFT CONTROL
+  - {t: DEL, h: Lower}
+  - {t: RETURN, h: Symbols}
+  Pointer:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - LWIN
+  - LEFT ALT
+  - LEFT CONTROL
+  - LSHFT
+  - ''
+  - PP
+  - RSHIFT
+  - RIGHT CONTROL
+  - RIGHT ALT
+  - RWIN
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - Scroll
+  - LEFT CONTROL
+  - Sniping
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - ''
+  - ''
+  - '&mkp MB1'
+  Lower:
+  - F12
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - +
+  - '-'
+  - ''
+  - ''
+  - ''
+  - UP ARROW
+  - VOLUME DOWN
+  - VOLUME UP
+  - '4'
+  - '5'
+  - '6'
+  - ''
+  - '*'
+  - /
+  - CAPS
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - MUTE
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - '='
+  - CAPS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - .
+  Symbols:
+  - F12
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - ''
+  - '`'
+  - ''''
+  - '"'
+  - ^
+  - '{'
+  - '}'
+  - ','
+  - ;
+  - ':'
+  - '~'
+  - ''
+  - {t: ▽, type: trans}
+  - '-'
+  - +
+  - '*'
+  - '%'
+  - '['
+  - ']'
+  - $
+  - '&euro'
+  - '&pound'
+  - '#'
+  - '@'
+  - {t: ▽, type: trans}
+  - '!'
+  - /
+  - \
+  - '|'
+  - (
+  - )
+  - _
+  - <
+  - '>'
+  - '?'
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - PAGE DOWN
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - END
+  - {type: held}
+  Scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Sniping:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ddf:
+  - ESC
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
+  - {t: Base, h: toggle}
+  - ''
+  - ''
+  - ''
+  - VOL UP
+  - Gui+-
+  - Gui+=
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREV
+  - PP
+  - NEXT
+  - Gui+0
+  - F23
+  - F24
+  - {t: RGB BRI, s: RGB BRD}
+  - {t: RGB HUI, s: RGB HUD}
+  - {t: RGB EFF, s: RGB EFR}
+  - '&bootloader'
+  - ''
+  - RGB ON
+  - RGB BRI
+  - VOL DN
+  - RGB EFF
+  - ''
+  - BT CLR
+  - BT CLR ALL
+  - {t: RGB ON, s: RGB OFF}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RETURN
+combos:
+- p: [53, 54, 55]
+  k: '&studio_unlock'
+- p: [50, 51, 52]
+  k: {t: ddf, h: toggle}
