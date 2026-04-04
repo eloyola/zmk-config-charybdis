@@ -370,7 +370,7 @@
 
         config_layer {
             label = "CONFIG";
-            display-name = "ddf";
+            display-name = "Config";
             bindings = <
 &kp ESC  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &to 0
 &none    &none            &none            &kp C_VOL_UP     &kp LG(MINUS)    &kp LG(EQUAL)      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &none            &none
