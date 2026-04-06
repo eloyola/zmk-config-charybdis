@@ -50,12 +50,12 @@ layers:
   - /
   - RIGHT SHIFT
   - SPACE
-  - DELETE
+  - LEFT CONTROL
   - LEFT ALT
   - LWIN
   - RET
-  - LEFT CONTROL
-  - {t: BACKSPACE, h: Lower}
+  - BACKSPACE
+  - {t: DELETE, h: Lower}
   - {t: SPACE, h: Symbols}
   Pointer:
   - {t: ▽, type: trans}
@@ -78,8 +78,8 @@ layers:
   - ''
   - '&mkp MB4'
   - '&mkp MB5'
-  - ''
-  - ''
+  - Gui+Ctl+LEFT ARROW
+  - Gui+Ctl+RIGHT
   - ''
   - ''
   - {t: ▽, type: trans}
