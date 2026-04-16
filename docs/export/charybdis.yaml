@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - '='
-  - LEFT CONTROL
+  - {t: LEFT CONTROL, h: sticky}
   - A
   - S
   - D
@@ -196,11 +196,11 @@ layers:
   - ':'
   - '~'
   - ''
-  - {t: ▽, type: trans}
-  - '-'
-  - +
-  - '*'
-  - '%'
+  - '&a_tilde'
+  - '&e_tilde'
+  - '&i_tilde'
+  - '&o_tilde'
+  - '&u_tilde'
   - '['
   - ']'
   - $
