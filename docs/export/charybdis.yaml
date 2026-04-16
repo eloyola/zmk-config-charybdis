@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSHFT
+  - {t: LSHFT, h: sticky}
   - Z
   - {t: X, h: Pointer}
   - C
@@ -87,7 +87,7 @@ layers:
   - LEFT ALT
   - LEFT CONTROL
   - LSHFT
-  - ''
+  - Sft+Gui+S
   - PP
   - RSHIFT
   - RIGHT CONTROL
