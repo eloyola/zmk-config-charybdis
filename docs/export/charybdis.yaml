@@ -49,12 +49,12 @@ layers:
   - {t: ., h: Pointer}
   - /
   - RIGHT SHIFT
-  - SPACE
+  - BACKSPACE
   - LEFT CONTROL
   - LEFT ALT
   - LWIN
   - RET
-  - BACKSPACE
+  - SPACE
   - {t: DELETE, h: Lower}
   - {t: SPACE, h: Symbols}
   Pointer:
