@@ -52,7 +52,7 @@ layers:
   - SPACE
   - LEFT CONTROL
   - LEFT ALT
-  - LWIN
+  - '&win_tdb'
   - SPACE
   - BACKSPACE
   - {t: DELETE, h: Lower}
