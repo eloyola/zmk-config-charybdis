@@ -225,8 +225,8 @@ layers:
   - INS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
-  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   Scroll:
   - {t: ▽, type: trans}
