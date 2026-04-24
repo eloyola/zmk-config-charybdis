@@ -195,7 +195,7 @@ layers:
   - ;
   - ':'
   - '~'
-  - ''
+  - '&n_tilde'
   - '&a_tilde'
   - '&e_tilde'
   - '&i_tilde'
@@ -219,7 +219,7 @@ layers:
   - <
   - '>'
   - '?'
-  - {t: ▽, type: trans}
+  - {t: Base, h: toggle}
   - PAGE UP
   - PAGE DOWN
   - INS
