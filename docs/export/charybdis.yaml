@@ -43,20 +43,20 @@ layers:
   - C
   - V
   - B
-  - N
+  - B
+  - '&n_tbd'
   - M
-  - ','
-  - {t: ., h: Pointer}
+  - {t: ',', h: Pointer}
+  - .
   - /
-  - RIGHT SHIFT
   - SPACE
   - LEFT CONTROL
   - LEFT ALT
   - LWIN
-  - RET
+  - SPACE
   - BACKSPACE
   - {t: DELETE, h: Lower}
-  - {t: SPACE, h: Symbols}
+  - {t: RETURN, h: Symbols}
   Pointer:
   - {t: ▽, type: trans}
   - ''
@@ -354,7 +354,7 @@ layers:
   - KP 8
   - KP 9
   - KP 0
-  - {t: Base, h: toggle}
+  - ''
   - ''
   - ''
   - ''
@@ -390,7 +390,7 @@ layers:
   - {t: RGB ON, s: RGB OFF}
   - ''
   - ''
-  - ''
+  - {t: Base, h: toggle}
   - ''
   - ''
   - ''
