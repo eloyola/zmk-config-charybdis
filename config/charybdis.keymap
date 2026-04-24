@@ -143,6 +143,13 @@
 
             tapping-term-ms = <180>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN>, <&to 3>;
+        };
     };
 
     macros {
@@ -349,9 +356,9 @@
             display-name = "Symbols";
             bindings = <
 &kp F12   &kp F1           &kp F2          &kp F3             &kp F4         &kp F5                  &kp F6                 &kp F7      &kp F8         &kp F9            &kp F10       &kp F11
-&none     &kp GRAVE        &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp CARET      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COMMA   &kp SEMI       &kp COLON         &kp TILDE     &none
+&none     &kp GRAVE        &kp APOSTROPHE  &kp DOUBLE_QUOTES  &kp CARET      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp COMMA   &kp SEMI       &kp COLON         &kp TILDE     &n_tilde
 &a_tilde  &e_tilde         &i_tilde        &o_tilde           &u_tilde       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp DOLLAR  &euro          &pound            &kp HASH      &kp AT
-&trans    &kp EXCLAMATION  &kp FSLH        &kp BACKSLASH      &kp PIPE       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDER   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+&trans    &kp EXCLAMATION  &kp FSLH        &kp BACKSLASH      &kp PIPE       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDER   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &to 0
                                            &kp PAGE_UP        &kp PAGE_DOWN  &kp INS                 &trans                 &trans
                                                               &kp HOME       &kp END                 &trans
             >;
