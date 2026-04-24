@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
+  - HOME
   - TAB
   - Q
   - W
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - '='
+  - END
   - {t: LEFT CONTROL, h: sticky}
   - A
   - S
@@ -208,17 +208,17 @@ layers:
   - '&pound'
   - '#'
   - '@'
-  - {t: ▽, type: trans}
-  - '!'
+  - '-'
+  - _
   - /
   - \
   - '|'
   - (
   - )
-  - _
+  - '!'
+  - '?'
   - <
   - '>'
-  - '?'
   - {t: Base, h: toggle}
   - PAGE UP
   - PAGE DOWN
