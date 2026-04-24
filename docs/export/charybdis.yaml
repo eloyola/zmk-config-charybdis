@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - '='
   - {t: LSHFT, h: sticky}
   - Z
   - {t: X, h: Pointer}
