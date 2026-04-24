@@ -360,7 +360,7 @@
 &a_tilde   &e_tilde        &i_tilde        &o_tilde           &u_tilde       &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp DOLLAR  &euro         &pound         &kp HASH          &kp AT
 &kp MINUS  &kp UNDERSCORE  &kp FSLH        &kp BACKSLASH      &kp PIPE       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp EXCL    &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN  &to 0
                                            &kp PAGE_UP        &kp PAGE_DOWN  &kp INS                 &trans                 &trans
-                                                              &kp HOME       &kp END                 &trans
+                                                              &trans         &trans                  &trans
             >;
         };
 
