@@ -36,7 +36,7 @@ layers:
   - K
   - L
   - ;
-  - '='
+  - {t: Symbols, h: toggle}
   - {t: LSHFT, h: sticky}
   - Z
   - {t: X, h: Pointer}
@@ -52,7 +52,7 @@ layers:
   - SPACE
   - LEFT CONTROL
   - LEFT ALT
-  - '&win_tdb'
+  - LWIN
   - SPACE
   - BACKSPACE
   - {t: DELETE, h: Lower}
@@ -141,9 +141,9 @@ layers:
   - '-'
   - ''
   - ''
-  - HOME
+  - PAGE UP
   - UP ARROW
-  - END
+  - PAGE DOWN
   - VOLUME UP
   - KP 4
   - KP 5
@@ -220,11 +220,11 @@ layers:
   - <
   - '>'
   - {t: Base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PAGE UP
   - PAGE DOWN
-  - INS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
