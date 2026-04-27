@@ -48,7 +48,7 @@ layers:
   - M
   - {t: ',', h: Pointer}
   - .
-  - /
+  - RSHFT
   - SPACE
   - LEFT CONTROL
   - LEFT ALT
