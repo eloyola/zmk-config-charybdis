@@ -50,13 +50,13 @@ layers:
   - .
   - RSHFT
   - SPACE
-  - LEFT CONTROL
+  - RET
   - LEFT ALT
   - LWIN
-  - SPACE
+  - RIGHT CONTROL
   - BACKSPACE
   - {t: DELETE, h: Lower}
-  - {t: RETURN, h: Symbols}
+  - {t: SPACE, h: Symbols}
   Pointer:
   - {t: ▽, type: trans}
   - ''
@@ -112,7 +112,7 @@ layers:
   - '&mkp MB3'
   - '&mkp MB2'
   - ''
-  - ''
+  - Gui+TAB
   - '&mkp MB1'
   Lower:
   - F12
