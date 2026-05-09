@@ -51,9 +51,9 @@ layers:
   - RSHFT
   - SPACE
   - RET
-  - LEFT ALT
+  - LEFT CONTROL
   - LWIN
-  - RIGHT CONTROL
+  - RIGHT ALT
   - BACKSPACE
   - {t: DELETE, h: Lower}
   - {t: SPACE, h: Symbols}
