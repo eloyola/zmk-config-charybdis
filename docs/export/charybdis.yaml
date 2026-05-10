@@ -50,10 +50,10 @@ layers:
   - .
   - RSHFT
   - SPACE
-  - RET
   - LEFT CONTROL
+  - LEFT ALT
   - LWIN
-  - RIGHT ALT
+  - RETURN
   - BACKSPACE
   - {t: DELETE, h: Lower}
   - {t: SPACE, h: Symbols}
@@ -399,8 +399,67 @@ layers:
   - ''
   - ''
   - RETURN
+  POINTERONLY:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - Gui+Ctl+LEFT ARROW
+  - Gui+Ctl+RIGHT
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - LWIN
+  - LEFT ALT
+  - LEFT CONTROL
+  - LSHFT
+  - Sft+Gui+S
+  - PP
+  - RSHIFT
+  - RIGHT CONTROL
+  - RIGHT ALT
+  - RWIN
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - Scroll
+  - LEFT CONTROL
+  - Sniping
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - ''
+  - ''
+  - {t: Base, h: toggle}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - ''
+  - Gui+TAB
+  - '&mkp MB1'
 combos:
 - p: [53, 54, 55]
   k: '&studio_unlock'
 - p: [50, 51, 52]
   k: {t: Config, h: toggle}
+- p: [51, 52, 55]
+  k: {t: POINTERONLY, h: toggle}
