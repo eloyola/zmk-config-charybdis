@@ -290,6 +290,11 @@
             key-positions = <50 51 52>;
             bindings = <&tog 6>;
         };
+
+        combo_pointer {
+            bindings = <&to 7>;
+            key-positions = <51 52 55>;
+        };
     };
 
     keymap {
@@ -300,12 +305,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC            &kp N1  &kp N2   &kp N3     &kp N4         &kp N5              &kp N6       &kp N7         &kp N8  &kp N9       &kp N0         &kp HOME
-&kp TAB            &kp Q   &kp W    &kp E      &kp R          &kp T               &kp Y        &kp U          &kp I   &kp O        &kp P          &kp END
-&skq LEFT_CONTROL  &kp A   &kp S    &kp D      &kp F          &kp G               &kp H        &kp J          &kp K   &kp L        &kp SEMICOLON  &to 3
-&skq LSHFT         &kp Z   &lt 1 X  &kp C      &kp V          &kp B               &kp B        &kp N          &kp M   &lt 1 COMMA  &kp PERIOD     &kp RSHFT
-                                    &kp SPACE  &kp RET        &kp LEFT_CONTROL    &kp LWIN     &kp RIGHT_ALT
-                                               &kp BACKSPACE  &lt 2 DELETE        &lt 3 SPACE
+&kp ESC            &kp N1  &kp N2   &kp N3     &kp N4            &kp N5          &kp N6       &kp N7      &kp N8  &kp N9       &kp N0         &kp HOME
+&kp TAB            &kp Q   &kp W    &kp E      &kp R             &kp T           &kp Y        &kp U       &kp I   &kp O        &kp P          &kp END
+&skq LEFT_CONTROL  &kp A   &kp S    &kp D      &kp F             &kp G           &kp H        &kp J       &kp K   &kp L        &kp SEMICOLON  &to 3
+&skq LSHFT         &kp Z   &lt 1 X  &kp C      &kp V             &kp B           &kp B        &kp N       &kp M   &lt 1 COMMA  &kp PERIOD     &kp RSHFT
+                                    &kp SPACE  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LWIN     &kp RETURN
+                                               &kp BACKSPACE     &lt 2 DELETE    &lt 3 SPACE
             >;
         };
 
@@ -384,6 +389,19 @@
 &none    &rgb_ug RGB_ON   &rgb_ug RGB_BRI  &none            &rgb_ug RGB_EFF  &none              &bt BT_CLR       &bt BT_CLR_ALL   &rgb_pow_mm      &none            &none            &to 0
                                            &none            &none            &none              &none            &none
                                                             &none            &none              &kp RETURN
+            >;
+        };
+
+        pointer_only {
+            label = "POINTERONLY";
+            display-name = "POINTERONLY";
+            bindings = <
+&trans  &none     &none         &none             &none             &none            &none     &none       &none                   &none              &none     &none
+&trans  &none     &none         &none             &none             &none            &mkp MB4  &mkp MB5    &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &none     &none
+&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &kp LS(LG(S))    &kp C_PP  &kp RSHIFT  &kp RIGHT_CONTROL       &kp RIGHT_ALT      &kp RWIN  &none
+&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5            &mkp MB1  &mkp MB2    &mkp MB3                &none              &none     &to 0
+                                &mkp MB1          &mkp MB3          &mkp MB2         &mkp MB3  &mkp MB2
+                                                  &none             &kp LG(TAB)      &mkp MB1
             >;
         };
     };
