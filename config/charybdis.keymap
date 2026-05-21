@@ -335,7 +335,7 @@
 &none     &none   &none           &none           &none            &kp C_MUTE           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &kp PLUS   &kp MINUS
 &none     &none   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp C_VOLUME_UP      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &kp ASTRK  &kp SLASH
 &kp CAPS  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &kp EQUAL  &none
-                                  &trans          &trans           &trans               &none            &kp KP_NUMBER_0
+                                  &trans          &trans           &trans               &kp RCTRL        &kp KP_NUMBER_0
                                                   &none            &none                &kp PERIOD
             >;
         };
