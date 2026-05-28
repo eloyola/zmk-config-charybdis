@@ -166,6 +166,20 @@
             key-positions = <32 33>;
             bindings = <&null_coal>;
         };
+
+        // // (line comment) - C + D (left bottom, middle + index)
+        combo_line_comment {
+            timeout-ms = <40>;
+            key-positions = <38 39>;
+            bindings = <&line_comment>;
+        };
+
+        // CAPSLOCK - both home row shift keys (T + N)
+        combo_caps_lock {
+            timeout-ms = <50>;
+            key-positions = <27 31>;
+            bindings = <&kp CAPS>;
+        };
     };
 
     // ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -251,6 +265,13 @@
             bindings = <&kp QMARK &kp QMARK>;
             label = "NULL_COAL";
         };
+
+        line_comment: line_comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp FSLH>;
+            label = "LINE_COMMENT";
+        };
     };
 
     keymap {
@@ -264,10 +285,10 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp HOME    &kp N1             &kp N2             &kp N3              &kp N4         &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
-&kp END     &kp Q              &kp W              &kp F               &kp P          &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BACKSLASH
+&kp ESC     &kp N1             &kp N2             &kp N3              &kp N4         &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
+&kp TAB     &kp Q              &kp W              &kp F               &kp P          &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BACKSLASH
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &hml LSHFT T   &kp G              &kp M            &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp SEMI
-&skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
+&skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp GRAVE
                                                   &lt MEDIA ESC       &lt NAV SPACE  &lt POINTER TAB    &lt 5 RETURN  &lt 6 DEL
                                                                       &kp DEL        &kp BSPC           &lt 4 BACKSPACE
             >;
