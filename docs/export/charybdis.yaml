@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   Base:
-  - HOME
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -12,8 +12,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
-  - END
+  - '='
+  - ESC
   - Q
   - W
   - F
@@ -24,7 +24,7 @@ layers:
   - U
   - Y
   - ''''
-  - \
+  - '-'
   - {t: LCTRL, h: sticky}
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
@@ -48,7 +48,7 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - \
   - {t: ESC, h: Media}
   - {t: SPACE, h: Nav}
   - {t: TAB, h: Pointer}
