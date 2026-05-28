@@ -103,6 +103,36 @@
     // ║ KEYMAP                                                                      ║
     // ╚══════════════════════════════════════════════════════════════════════════════╝
 
+    macros {
+        pound: pound {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "POUND";
+        };
+
+        euro: euro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EURO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -195,7 +225,7 @@
             display-name = "Sym";
             bindings = <
 &trans  &none      &none     &none      &none      &none        &none  &none      &none      &none     &none     &none
-&none   &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC     &none  &none      &none      &none     &none     &none
+&none   &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC     &none  &euro      &pound     &none     &none     &none
 &none   &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI  &none
 &none   &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none  &none      &none      &none     &none     &none
                              &kp LPAR   &kp RPAR   &kp UNDER    &none  &none
