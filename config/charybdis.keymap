@@ -305,12 +305,12 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC     &kp N1             &kp N2             &kp N3              &kp N4              &kp N5      &kp N6           &kp N7              &kp N8              &kp N9             &kp N0             &kp MINUS
-&kp TAB     &kp Q              &kp W              &kp F               &kp P               &kp B       &kp J            &kp L               &kp U               &kp Y              &kp SQT            &kp BACKSLASH
-&skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &lhome_row LSHFT T  &kp G       &kp M            &rhome_row RSHFT N  &rhome_row RCTRL E  &rhome_row LALT I  &rhome_row RGUI O  &kp SEMI
-&skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D               &kp V       &kp K            &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp GRAVE
-                                                  &lt MEDIA HOME      &lt NAV SPACE       &kp END     &lt 5 RETURN     &lt 6 DEL
-                                                                      &kp DEL             &kp LWIN    &lt 4 BACKSPACE
+&kp ESC     &kp N1             &kp N2             &kp N3              &kp N4              &kp N5       &kp N6           &kp N7              &kp N8              &kp N9             &kp N0             &kp MINUS
+&kp TAB     &kp Q              &kp W              &kp F               &kp P               &kp B        &kp J            &kp L               &kp U               &kp Y              &kp SQT            &kp BACKSLASH
+&skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &lhome_row LSHFT T  &kp G        &kp M            &rhome_row RSHFT N  &rhome_row RCTRL E  &rhome_row LALT I  &rhome_row RGUI O  &kp SEMI
+&skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D               &kp V        &kp K            &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp GRAVE
+                                                  &kp LWIN            &lt NAV SPACE       &kp HOME     &lt 5 DELETE     &lt 6 RET
+                                                                      &kp DEL             &lt 3 END    &lt 4 BACKSPACE
             >;
         };
 
@@ -325,8 +325,8 @@
 &none   &none     &none     &none      &none      &none    &kp LC(Y)      &kp LC(V)   &kp LC(C)  &kp LC(X)  &kp LC(Z)  &none
 &none   &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none    &caps_word     &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &none
 &none   &none     &none     &none      &none      &none    &kp INS        &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &none
-                            &none      &none      &none    &kp BACKSPACE  &kp DELETE
-                                       &none      &none    &kp RET
+                            &none      &none      &none    &kp DELETE     &kp RETURN
+                                       &none      &none    &kp BACKSPACE
             >;
         };
 
