@@ -516,3 +516,21 @@ layers:
 combos:
 - p: [53, 54, 55]
   k: '&studio_unlock'
+- p: [0, 1]
+  k: TAB
+- p: [10, 11]
+  k: ESC
+- p: [8, 9]
+  k: DELETE
+- p: [20, 21]
+  k: CAPS
+- p: [2, 3]
+  k: BSPC
+- p: [7, 8]
+  k: ENTER
+- p: [22, 23]
+  k: Ctl+Z
+- p: [27, 28]
+  k: Ctl+Y
+- p: [16, 17]
+  k: Gui+SPACE
