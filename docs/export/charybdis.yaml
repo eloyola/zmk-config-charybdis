@@ -54,8 +54,8 @@ layers:
   - {t: TAB, h: Pointer}
   - {t: BACKSPACE, h: Num}
   - {t: DEL, h: Fun}
-  - LALT
-  - LWIN
+  - DEL
+  - BSPC
   - {t: RETURN, h: Sym}
   Nav:
   - {t: ▽, type: trans}
