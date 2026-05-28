@@ -39,7 +39,7 @@ layers:
   - ;
   - {t: LSHFT, h: sticky}
   - Z
-  - X
+  - {t: X, h: Pointer}
   - C
   - D
   - V
@@ -133,10 +133,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - Sft+Gui+LEFT ARROW
+  - Sft+Gui+RIGHT
   - ''
   - ''
   - ''
@@ -144,28 +144,28 @@ layers:
   - LALT
   - LSHFT
   - LCTRL
+  - Sft+Gui+S
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Scroll
-  - ''
-  - Sniping
-  - ''
-  - '&mkp MB4'
-  - '&mkp MB5'
   - ''
   - ''
   - ''
   - ''
   - ''
   - {type: held}
+  - Scroll
+  - ''
+  - Sniping
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&mkp MCLK'
   - '&mkp RCLK'
   - ''
@@ -438,7 +438,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -450,7 +450,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -495,7 +495,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -507,7 +507,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
