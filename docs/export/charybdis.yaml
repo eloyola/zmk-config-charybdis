@@ -76,11 +76,11 @@ layers:
   - ''
   - ''
   - ''
-  - REDO
-  - PASTE
-  - COPY
-  - CUT
-  - UNDO
+  - Ctl+Y
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
   - ''
   - ''
   - LGUI
