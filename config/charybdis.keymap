@@ -81,6 +81,16 @@
             hold-trigger-on-release;
             label = "LHOME_ROW";
         };
+
+        skq: skq {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SKQ";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1020>;
+            quick-release;
+            ignore-modifiers;
+        };
     };
 
     // ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -144,12 +154,12 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1             &kp N2             &kp N3              &kp N4              &kp N5             &kp N6       &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
-&kp TAB    &kp Q              &kp W              &kp F               &kp P               &kp B              &kp J        &kp L         &kp U         &kp Y        &kp SQT      &kp BSLH
-&kp LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LSHFT S  &lhome_row LCTRL T  &kp G              &kp M        &hmr RCTRL N  &hmr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SEMI
-&kp LSHFT  &kp Z              &kp X              &kp C               &kp D               &kp V              &kp K        &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
-                                                 &lt MEDIA ESC       &lt NAV SPACE       &lt POINTER TAB    &lt SYM RET  &lt NUM BSPC
-                                                                     &kp LALT            &lt FUN DEL        &kp LWIN
+&kp HOME    &kp N1             &kp N2             &kp N3              &kp N4              &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
+&kp END     &kp Q              &kp W              &kp F               &kp P               &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BSLH
+&skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LSHFT S  &lhome_row LCTRL T  &kp G              &kp M            &hmr RCTRL N  &hmr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SEMI
+&skq LSHFT  &kp Z              &kp X              &kp C               &kp D               &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
+                                                  &lt MEDIA ESC       &lt NAV SPACE       &lt POINTER TAB    &lt 4 BACKSPACE  &lt 6 DEL
+                                                                      &kp LALT            &kp LWIN           &lt 5 RETURN
             >;
         };
 
