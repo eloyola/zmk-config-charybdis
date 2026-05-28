@@ -49,9 +49,9 @@ layers:
   - .
   - /
   - '`'
-  - {t: ESC, h: Media}
+  - {t: HOME, h: Media}
   - {t: SPACE, h: Nav}
-  - TAB
+  - END
   - {t: RETURN, h: Sym}
   - {t: DEL, h: Fun}
   - DEL
