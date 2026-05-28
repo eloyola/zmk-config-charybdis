@@ -109,11 +109,11 @@ layers:
   - ''
   - {type: held}
   - ''
+  - BACKSPACE
+  - DELETE
+  - ''
+  - ''
   - RET
-  - BSPC
-  - ''
-  - ''
-  - DEL
   Pointer:
   - {t: ▽, type: trans}
   - ''
