@@ -85,8 +85,8 @@ layers:
   - ''
   - LGUI
   - LALT
-  - LSHFT
   - LCTRL
+  - LSHIFT
   - ''
   - '&caps_word'
   - LEFT
@@ -142,8 +142,8 @@ layers:
   - ''
   - LGUI
   - LALT
-  - LSHFT
   - LCTRL
+  - LSHIFT
   - Sft+Gui+S
   - ''
   - ''
@@ -199,8 +199,8 @@ layers:
   - ''
   - LGUI
   - LALT
-  - LSHFT
   - LCTRL
+  - LSHIFT
   - ''
   - ''
   - PREV
@@ -260,8 +260,8 @@ layers:
   - '6'
   - '='
   - ''
+  - RSHIFT
   - RCTRL
-  - RSHFT
   - LALT
   - RGUI
   - ''
@@ -317,8 +317,8 @@ layers:
   - (
   - )
   - ''
+  - RSHIFT
   - RCTRL
-  - RSHFT
   - LALT
   - RGUI
   - ''
@@ -374,8 +374,8 @@ layers:
   - F6
   - SLCK
   - ''
+  - RSHIFT
   - RCTRL
-  - RSHFT
   - LALT
   - RGUI
   - ''
