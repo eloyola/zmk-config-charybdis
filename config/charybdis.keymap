@@ -111,8 +111,8 @@
         // C# operator combos
         // Row 3 (bottom): 36=Z 37=X 38=C 39=D 40=V | 41=K 42=H 43=, 44=. 45=/
         // Row 2 (home):   24=A 25=R 26=S 27=T 28=G | 29=M 30=N 31=E 32=I 33=O
-
         // => (fat arrow) - D + V (left bottom, index + inner)
+
         combo_fat_arrow {
             timeout-ms = <40>;
             key-positions = <39 40>;
@@ -120,6 +120,7 @@
         };
 
         // != (not equal) - H + , (right bottom, index + middle)
+
         combo_not_equal {
             timeout-ms = <40>;
             key-positions = <42 43>;
@@ -127,6 +128,7 @@
         };
 
         // == (double equal) - N + E (right home, index + middle)
+
         combo_dbl_equal {
             timeout-ms = <40>;
             key-positions = <30 31>;
@@ -134,6 +136,7 @@
         };
 
         // && (logical AND) - X + C (left bottom, ring + middle)
+
         combo_dbl_amp {
             timeout-ms = <40>;
             key-positions = <37 38>;
@@ -141,6 +144,7 @@
         };
 
         // || (logical OR) - , + . (right bottom, middle + ring)
+
         combo_dbl_pipe {
             timeout-ms = <40>;
             key-positions = <43 44>;
@@ -148,6 +152,7 @@
         };
 
         // ?. (null-conditional) - . + / (right bottom, ring + pinky)
+
         combo_null_cond {
             timeout-ms = <40>;
             key-positions = <44 45>;
@@ -155,6 +160,7 @@
         };
 
         // ?? (null-coalescing) - I + O (right home, ring + pinky)
+
         combo_null_coal {
             timeout-ms = <40>;
             key-positions = <32 33>;
@@ -258,12 +264,12 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp HOME    &kp N1             &kp N2             &kp N3         &kp N4         &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
-&kp END     &kp Q              &kp W              &kp F          &kp P          &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BACKSLASH
-&skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &hml LSHFT S   &hml LCTRL T   &kp G              &kp M            &hmr RCTRL N  &hmr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SEMI
-&skq LSHFT  &kp Z              &lt 2 X            &kp C          &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
-                                                  &lt MEDIA ESC  &lt NAV SPACE  &lt POINTER TAB    &lt 4 BACKSPACE  &lt 6 DEL
-                                                                 &kp LALT       &kp LWIN           &lt 5 RETURN
+&kp HOME    &kp N1             &kp N2             &kp N3              &kp N4         &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
+&kp END     &kp Q              &kp W              &kp F               &kp P          &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BACKSLASH
+&skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &hml LSHFT T   &kp G              &kp M            &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp SEMI
+&skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
+                                                  &lt MEDIA ESC       &lt NAV SPACE  &lt POINTER TAB    &lt 4 BACKSPACE  &lt 6 DEL
+                                                                      &kp LALT       &kp LWIN           &lt 5 RETURN
             >;
         };
 
@@ -294,7 +300,7 @@
 &none   &none     &none     &none       &none      &none            &mkp MB4   &mkp MB5   &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &none  &none
 &none   &kp LGUI  &kp LALT  &kp LSHFT   &kp LCTRL  &kp LS(LG(S))    &none      &none      &none                   &none              &none  &none
 &none   &none     &none     &mo SCROLL  &none      &mo SNIPING      &mkp LCLK  &mkp MCLK  &mkp RCLK               &none              &none  &none
-                            &none       &none      &none            &mkp MCLK  &mkp RCLK
+                            &mkp LCLK   &mkp MCLK  &mkp RCLK        &mkp MCLK  &mkp RCLK
                                         &none      &none            &mkp LCLK
             >;
         };
@@ -339,12 +345,12 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-&trans  &none      &none     &none      &none      &none        &none  &none      &none      &none     &none     &none
-&none   &kp LBRC   &kp AMPS  &kp ASTRK  &kp RBRC   &kp PIPE     &none  &euro      &pound     &none     &none     &none
-&none   &kp LPAR   &kp DLLR  &kp PRCNT  &kp RPAR   &kp PLUS     &none  &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI  &none
-&none   &kp LT     &kp EXCL  &kp AT     &kp GT     &kp TILDE    &none  &none      &none      &none     &none     &none
-                             &kp HASH   &kp EQUAL  &kp UNDER    &none  &none
-                                        &none      &none        &none
+&trans  &none     &none     &none      &none      &none        &none  &none      &none      &none     &none     &none
+&none   &kp LBRC  &kp AMPS  &kp ASTRK  &kp RBRC   &kp PIPE     &none  &euro      &pound     &none     &none     &none
+&none   &kp LPAR  &kp DLLR  &kp PRCNT  &kp RPAR   &kp PLUS     &none  &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI  &none
+&none   &kp LT    &kp EXCL  &kp AT     &kp GT     &kp TILDE    &none  &none      &none      &none     &none     &none
+                            &kp HASH   &kp EQUAL  &kp UNDER    &none  &none
+                                       &none      &none        &none
             >;
         };
 
