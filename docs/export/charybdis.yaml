@@ -56,7 +56,7 @@ layers:
   - {t: BSPC, h: Num}
   - LALT
   - {t: DEL, h: Fun}
-  - {t: TAB, h: Pointer}
+  - LWIN
   Nav:
   - {t: ▽, type: trans}
   - ''
@@ -146,9 +146,9 @@ layers:
   - LCTRL
   - ''
   - ''
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -163,14 +163,14 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - {type: held}
   - '&mkp MCLK'
-  - '&mkp LCLK'
-  - {t: '&mkp RCLK', type: held}
-  - '&mkp LCLK'
   - '&mkp RCLK'
   - ''
   - ''
-  - '&mkp MCLK'
+  - '&mkp LCLK'
   Media:
   - {t: ▽, type: trans}
   - ''
