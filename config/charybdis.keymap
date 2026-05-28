@@ -157,7 +157,7 @@
 &kp HOME    &kp N1             &kp N2             &kp N3         &kp N4         &kp N5             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0       &kp MINUS
 &kp END     &kp Q              &kp W              &kp F          &kp P          &kp B              &kp J            &kp L         &kp U         &kp Y        &kp SQT      &kp BACKSLASH
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &hml LSHFT S   &hml LCTRL T   &kp G              &kp M            &hmr RCTRL N  &hmr RSHFT E  &hmr LALT I  &hmr RGUI O  &kp SEMI
-&skq LSHFT  &kp Z              &kp X              &kp C          &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
+&skq LSHFT  &kp Z              &lt 2 X            &kp C          &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
                                                   &lt MEDIA ESC  &lt NAV SPACE  &lt POINTER TAB    &lt 4 BACKSPACE  &lt 6 DEL
                                                                  &kp LALT       &kp LWIN           &lt 5 RETURN
             >;
@@ -186,12 +186,12 @@
         pointer_layer {
             display-name = "Pointer";
             bindings = <
-&trans  &none     &none     &none       &none      &none          &none      &none      &none     &none  &none  &none
-&none   &none     &none     &none       &none      &none          &none      &none      &none     &none  &none  &none
-&none   &kp LGUI  &kp LALT  &kp LSHFT   &kp LCTRL  &none          &none      &none      &none     &none  &none  &none
-&none   &none     &none     &mo SCROLL  &none      &mo SNIPING    &none      &mkp MB4   &mkp MB5  &none  &none  &none
-                            &none       &none      &none          &mkp MCLK  &mkp RCLK
-                                        &none      &none          &mkp LCLK
+&trans  &none     &none     &none       &none      &none            &none      &none      &none                   &none              &none  &none
+&none   &none     &none     &none       &none      &none            &mkp MB4   &mkp MB5   &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &none  &none
+&none   &kp LGUI  &kp LALT  &kp LSHFT   &kp LCTRL  &kp LS(LG(S))    &none      &none      &none                   &none              &none  &none
+&none   &none     &none     &mo SCROLL  &none      &mo SNIPING      &mkp LCLK  &mkp MCLK  &mkp RCLK               &none              &none  &none
+                            &none       &none      &none            &mkp MCLK  &mkp RCLK
+                                        &none      &none            &mkp LCLK
             >;
         };
 
