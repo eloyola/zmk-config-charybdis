@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   Base:
-  - ESC
+  - HOME
   - '1'
   - '2'
   - '3'
@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - '-'
-  - TAB
+  - END
   - Q
   - W
   - F
@@ -25,7 +25,7 @@ layers:
   - Y
   - ''''
   - \
-  - LCTRL
+  - {t: LCTRL, h: sticky}
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - {t: S, h: LSHFT}
@@ -37,7 +37,7 @@ layers:
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
   - ;
-  - LSHFT
+  - {t: LSHFT, h: sticky}
   - Z
   - X
   - C
@@ -52,11 +52,11 @@ layers:
   - {t: ESC, h: Media}
   - {t: SPACE, h: Nav}
   - {t: TAB, h: Pointer}
-  - {t: RET, h: Sym}
-  - {t: BSPC, h: Num}
-  - LALT
+  - {t: BACKSPACE, h: Num}
   - {t: DEL, h: Fun}
+  - LALT
   - LWIN
+  - {t: RETURN, h: Sym}
   Nav:
   - {t: ▽, type: trans}
   - ''
@@ -280,8 +280,8 @@ layers:
   - .
   - '0'
   - '-'
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -337,11 +337,11 @@ layers:
   - (
   - )
   - _
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
   Fun:
   - {t: ▽, type: trans}
   - ''
@@ -395,9 +395,9 @@ layers:
   - SPACE
   - TAB
   - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
   - ''
   Scroll:
   - {t: ▽, type: trans}
