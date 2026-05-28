@@ -7,9 +7,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#include "behaviors.dtsi"
-#include "macros.dtsi"
-#include "combos.dtsi"
+#include "config/behaviors.dtsi"
+#include "config/macros.dtsi"
+#include "config/combos.dtsi"
 
 / {
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
