@@ -51,11 +51,11 @@ layers:
   - '`'
   - {t: ESC, h: Media}
   - {t: SPACE, h: Nav}
-  - {t: TAB, h: Pointer}
+  - TAB
   - {t: RETURN, h: Sym}
   - {t: DEL, h: Fun}
   - DEL
-  - BSPC
+  - LWIN
   - {t: BACKSPACE, h: Num}
   Nav:
   - {t: ▽, type: trans}
