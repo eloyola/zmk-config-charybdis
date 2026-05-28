@@ -39,7 +39,7 @@ layers:
   - ;
   - {t: LSHFT, h: sticky}
   - Z
-  - {t: X, h: Pointer}
+  - X
   - C
   - D
   - V
@@ -51,12 +51,12 @@ layers:
   - '`'
   - LWIN
   - {t: SPACE, h: Nav}
-  - HOME
-  - {t: DELETE, h: Sym}
+  - {t: HOME, h: Pointer}
+  - {t: DELETE, h: Num}
   - {t: RET, h: Fun}
   - DEL
   - {t: END, h: Media}
-  - {t: BACKSPACE, h: Num}
+  - {t: BACKSPACE, h: Sym}
   Nav:
   - {t: ▽, type: trans}
   - ''
@@ -153,19 +153,19 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - ''
+  - ''
   - Scroll
-  - ''
+  - RCTRL
   - Sniping
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
   - ''
   - ''
   - ''
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - ''
+  - {type: held}
   - '&mkp MCLK'
   - '&mkp RCLK'
   - ''
@@ -280,11 +280,11 @@ layers:
   - .
   - '0'
   - '-'
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   Sym:
   - {t: ▽, type: trans}
   - ''
@@ -337,11 +337,11 @@ layers:
   - '#'
   - '='
   - _
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
   Fun:
   - {t: ▽, type: trans}
   - ''
@@ -379,7 +379,7 @@ layers:
   - LALT
   - RGUI
   - ''
-  - ''
+  - CAPS
   - F10
   - F1
   - F2
@@ -438,19 +438,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -495,19 +495,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -532,5 +532,3 @@ combos:
   k: '&null_coal'
 - p: [38, 39]
   k: '&line_comment'
-- p: [27, 31]
-  k: CAPS
