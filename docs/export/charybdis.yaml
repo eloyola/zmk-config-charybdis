@@ -52,11 +52,11 @@ layers:
   - {t: ESC, h: Media}
   - {t: SPACE, h: Nav}
   - {t: TAB, h: Pointer}
-  - {t: BACKSPACE, h: Num}
+  - {t: RETURN, h: Sym}
   - {t: DEL, h: Fun}
   - DEL
   - BSPC
-  - {t: RETURN, h: Sym}
+  - {t: BACKSPACE, h: Num}
   Nav:
   - {t: ▽, type: trans}
   - ''
@@ -280,11 +280,11 @@ layers:
   - .
   - '0'
   - '-'
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
   Sym:
   - {t: ▽, type: trans}
   - ''
@@ -337,11 +337,11 @@ layers:
   - '#'
   - '='
   - _
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   Fun:
   - {t: ▽, type: trans}
   - ''
