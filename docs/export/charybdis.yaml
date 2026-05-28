@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - END
-  - '&skq LEFT_CONTROL'
+  - {t: LEFT CONTROL, h: sticky}
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - {t: Symbols, h: toggle}
-  - '&skq LSHFT'
+  - {t: LSHFT, h: sticky}
   - Z
   - {t: X, h: Pointer}
   - C
@@ -375,9 +375,9 @@ layers:
   - ''
   - F23
   - F24
-  - '&rgb_brt_mm'
-  - '&rgb_hue_mm'
-  - '&rgb_eff_mm'
+  - {t: RGB BRI, s: RGB BRD}
+  - {t: RGB HUI, s: RGB HUD}
+  - {t: RGB EFF, s: RGB EFR}
   - '&bootloader'
   - ''
   - RGB ON
@@ -387,7 +387,7 @@ layers:
   - ''
   - BT CLR
   - BT CLR ALL
-  - '&rgb_pow_mm'
+  - {t: RGB ON, s: RGB OFF}
   - ''
   - ''
   - {t: Base, h: toggle}
@@ -456,3 +456,10 @@ layers:
   - ''
   - Gui+TAB
   - '&mkp MB1'
+combos:
+- p: [53, 54, 55]
+  k: '&studio_unlock'
+- p: [50, 51, 52]
+  k: {t: Config, h: toggle}
+- p: [51, 52, 55]
+  k: {t: POINTERONLY, h: toggle}
