@@ -28,7 +28,7 @@
     }; \
     \
     move { \
-        layers = <BASE POINTER>; \
+        layers = <BASE NAV POINTER MEDIA NUM SYM FUN>; \
         input-processors = <&zip_xy_scaler 3 2>; \
     };
 

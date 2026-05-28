@@ -11,48 +11,34 @@
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
 };
 
-&mt {
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ CONFIGURATION                                                               ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
 
 &lt {
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <180>;
+    quick-tap-ms = <175>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
 };
 
-// Layer definitions
+// Layer definitions (must match charybdis_layers.h for trackball processors)
+#define BASE    0
+#define NAV     1
+#define POINTER 2
+#define MEDIA   3
+#define NUM     4
+#define SYM     5
+#define FUN     6
+#define SCROLL  7
+#define SNIPING 8
 
-#define BASE 0
-#define POINTER 1
-#define RAISE 2
-#define LOWER 3
-#define SCROLL 4
-#define SNIPING 5
-#define CONFIG 6
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ BEHAVIORS                                                                   ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
 
 / {
     behaviors {
-        // Hold-tap behavior for layer with tap-preferred
-
-        blt: blt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <300>;
-            require-prior-idle-ms = <100>;
-            bindings = <&mo>, <&kp>;
-
-            retro-tap;
-        };
-
-        // Tap-dance for GUI/Ctrl+B
-        // Tap/hold Alt, double-tap Ctrl+Shift+Z
         // Home row mods - Left hand
-
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -61,14 +47,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 53 54>; // Right side keys
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 53 54 55>;
             hold-trigger-on-release;
-            retro-tap;
         };
 
         // Home row mods - Right hand
-
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -77,284 +60,143 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 51 52 55>; // Left side keys
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 48 49 50 51 52>;
             hold-trigger-on-release;
-            retro-tap;
-        };
-
-        // RGB controls: default action, Shift = inverse action
-
-        rgb_brt_mm: rgb_brt_mm {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rgb_hue_mm: rgb_hue_mm {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rgb_eff_mm: rgb_eff_mm {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rgb_pow_mm: rgb_pow_mm {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_ON>, <&rgb_ug RGB_OFF>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        scroll_up_down: scroll_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <250>;
-        };
-
-        skq: skq {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SKQ";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <1020>;
-            quick-release;
-            ignore-modifiers;
         };
     };
 
-    macros {
-        // Ctrl+Alt+Cmd macro
-        // Ctrl+Shift+Alt macro
-        // Ctrl+Alt macro
-        // Hold Ctrl+Cmd+Left Click while key is pressed (for mouse drag window actions)
-
-        pound: pound {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-        };
-
-        euro: euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "EURO";
-        };
-
-        a_tilde: a_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "A_TILDE";
-        };
-
-        e_tilde: e_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N3 &kp KP_N0>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "E_TILDE";
-        };
-
-        i_tilde: i_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_N1>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "I_TILDE";
-        };
-
-        o_tilde: o_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_N2>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "O_TILDE";
-        };
-
-        u_tilde: u_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_N3>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "U_TILDE";
-        };
-
-        n_tilde: n_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N1 &kp KP_N6 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            wait-ms = <0>;
-            tap-ms = <10>;
-            label = "N_TILDE";
-        };
-    };
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ COMBOS                                                                      ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <20>;
-        require-prior-idle-ms = <250>;
 
-        // Studio Unlock Combo - all three right thumb keys
-
+        // Studio Unlock - all three right thumb keys
         combo_studio_unlock {
             timeout-ms = <50>;
             key-positions = <53 54 55>;
             bindings = <&studio_unlock>;
         };
-
-        // Gaming layer toggle combo - keys 49, 55, 54
-
-        combo_config {
-            timeout-ms = <50>;
-            key-positions = <50 51 52>;
-            bindings = <&tog 6>;
-        };
-
-        combo_pointer {
-            bindings = <&to 7>;
-            key-positions = <51 52 55>;
-        };
     };
+
+// ╔══════════════════════════════════════════════════════════════════════════════╗
+// ║ KEYMAP                                                                      ║
+// ╚══════════════════════════════════════════════════════════════════════════════╝
 
     keymap {
         compatible = "zmk,keymap";
-        sensor-bindings = <&scroll_up_down>;
 
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ BASE - Colemak-DH with home row mods (GACS)                          │
+        // │ Unused keys (top row + outer columns) available for extras            │
+        // └──────────────────────────────────────────────────────────────────────┘
         base_layer {
-            label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC            &kp N1  &kp N2   &kp N3     &kp N4            &kp N5          &kp N6       &kp N7      &kp N8  &kp N9       &kp N0         &kp HOME
-&kp TAB            &kp Q   &kp W    &kp E      &kp R             &kp T           &kp Y        &kp U       &kp I   &kp O        &kp P          &kp END
-&skq LEFT_CONTROL  &kp A   &kp S    &kp D      &kp F             &kp G           &kp H        &kp J       &kp K   &kp L        &kp SEMICOLON  &to 3
-&skq LSHFT         &kp Z   &lt 1 X  &kp C      &kp V             &kp B           &kp B        &kp N       &kp M   &lt 1 COMMA  &kp PERIOD     &kp RSHFT
-                                    &kp SPACE  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LWIN     &kp RETURN
-                                               &kp BACKSPACE     &lt 2 DELETE    &lt 3 SPACE
+&kp ESC    &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp N6     &kp N7        &kp N8        &kp N9       &kp N0         &kp MINUS
+&kp TAB    &kp Q          &kp W        &kp F         &kp P         &kp B             &kp J      &kp L         &kp U         &kp Y        &kp SQT        &kp BSLH
+&kp LCTRL  &hml LGUI A    &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G             &kp M      &hmr RCTRL N  &hmr RSHFT E  &hmr LALT I  &hmr RGUI O    &kp SEMI
+&kp LSHFT  &kp Z          &kp X        &kp C         &kp D         &kp V             &kp K      &kp H         &kp COMMA     &kp DOT      &kp FSLH       &kp RSHFT
+                                        &lt MEDIA ESC &lt NAV SPACE &lt POINTER TAB   &lt SYM RET  &lt NUM BSPC
+                                                      &kp LALT      &lt FUN DEL       &lt POINTER TAB
             >;
         };
 
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ NAV - Navigation + editing                                            │
+        // └──────────────────────────────────────────────────────────────────────┘
+        nav_layer {
+            display-name = "Nav";
+            bindings = <
+&trans  &none     &none     &none      &none      &none       &none      &none      &none      &none      &none      &none
+&none   &none     &none     &none      &none      &none       &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO &none
+&none   &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none       &caps_word &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
+&none   &none     &none     &none      &none      &none       &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
+                            &none      &none      &none       &kp RET    &kp BSPC
+                                       &none      &none       &kp DEL
+            >;
+        };
+
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ POINTER - Mouse buttons + trackball (scroll/snipe via held layers)    │
+        // └──────────────────────────────────────────────────────────────────────┘
         pointer_layer {
-            label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&trans  &none     &none         &none             &none             &none            &none     &none       &none                   &none              &none     &none
-&trans  &none     &none         &none             &none             &none            &mkp MB4  &mkp MB5    &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &none     &none
-&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &kp LS(LG(S))    &kp C_PP  &kp RSHIFT  &kp RIGHT_CONTROL       &kp RIGHT_ALT      &kp RWIN  &none
-&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5            &mkp MB1  &mkp MB2    &mkp MB3                &none              &none     &trans
-                                &mkp MB1          &mkp MB3          &mkp MB2         &mkp MB3  &mkp MB2
-                                                  &none             &kp LG(TAB)      &mkp MB1
+&trans  &none     &none     &none      &none      &none       &none      &none      &none      &none      &none      &none
+&none   &none     &none     &none      &none      &none       &none      &none      &none      &none      &none      &none
+&none   &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none       &none      &mkp LCLK  &mkp MCLK  &mkp RCLK  &none      &none
+&none   &none     &none     &mo SCROLL &none      &mo SNIPING &none      &mkp MB4   &mkp MB5   &none      &none      &none
+                            &mkp MCLK  &mkp LCLK  &mkp RCLK   &mkp LCLK  &mkp RCLK
+                                       &none      &none        &mkp MCLK
             >;
         };
 
-        raise_layer {
-            label = "RAISE";
-            display-name = "Lower";
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ MEDIA - Media controls + Bluetooth                                    │
+        // └──────────────────────────────────────────────────────────────────────┘
+        media_layer {
+            display-name = "Media";
             bindings = <
-&kp F12   &kp F1  &kp F2          &kp F3          &kp F4           &kp F5               &kp F6           &kp F7           &kp F8           &kp F9  &kp F10    &kp F11
-&none     &none   &none           &none           &none            &kp C_MUTE           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &kp PLUS   &kp MINUS
-&none     &none   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp C_VOLUME_UP      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &kp ASTRK  &kp SLASH
-&kp CAPS  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &kp EQUAL  &none
-                                  &trans          &trans           &trans               &kp RCTRL        &kp KP_NUMBER_0
-                                                  &none            &none                &kp PERIOD
+&trans  &none     &none     &none      &none      &none       &none       &none        &none        &none        &none        &none
+&none   &none     &none     &none      &none      &none       &none       &none        &none        &none        &none        &none
+&none   &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none       &none       &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &none
+&none   &none     &none     &none      &none      &none       &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none
+                            &none      &none      &none       &kp C_STOP  &kp C_PP
+                                       &none      &none       &kp C_MUTE
             >;
         };
 
-        lower_layer {
-            label = "LOWER";
-            display-name = "Symbols";
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ NUM - Number pad                                                      │
+        // └──────────────────────────────────────────────────────────────────────┘
+        num_layer {
+            display-name = "Num";
             bindings = <
-&kp F12  &kp F1          &kp F2    &kp F3         &kp F4     &kp F5                  &kp F6                 &kp F7         &kp F8        &kp F9         &kp F10           &kp F11
-&none    &none           &kp HASH  &e_tilde       &kp CARET  &kp LEFT_BRACE          &kp RIGHT_BRACE        &u_tilde       &i_tilde      &o_tilde       &none             &kp GRAVE
-&trans   &a_tilde        &kp AT    &none          &none      &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp DOLLAR     &euro         &pound         &trans            &kp APOSTROPHE
-&trans   &kp UNDERSCORE  &kp FSLH  &kp BACKSLASH  &kp PIPE   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &n_tilde       &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN  &to 0
-                                   &trans         &trans     &trans                  &kp PAGE_UP            &kp PAGE_DOWN
-                                                  &trans     &trans                  &trans
+&trans  &none      &none   &none    &none   &none       &none   &none      &none      &none     &none      &none
+&none   &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT    &none   &none      &none      &none     &none      &none
+&none   &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL   &none   &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI   &none
+&none   &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH    &none   &none      &none      &none     &none      &none
+                           &kp DOT  &kp N0  &kp MINUS   &none   &none
+                                    &none   &none       &none
             >;
         };
 
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ SYM - Symbols                                                         │
+        // └──────────────────────────────────────────────────────────────────────┘
+        sym_layer {
+            display-name = "Sym";
+            bindings = <
+&trans  &none      &none     &none      &none      &none       &none   &none      &none      &none     &none      &none
+&none   &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC    &none   &none      &none      &none     &none      &none
+&none   &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none   &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI   &none
+&none   &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE    &none   &none      &none      &none     &none      &none
+                             &kp LPAR  &kp RPAR   &kp UNDER   &none   &none
+                                       &none      &none       &none
+            >;
+        };
+
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ FUN - Function keys                                                   │
+        // └──────────────────────────────────────────────────────────────────────┘
+        fun_layer {
+            display-name = "Fun";
+            bindings = <
+&trans  &none    &none   &none   &none      &none          &none   &none      &none      &none     &none      &none
+&none   &kp F12  &kp F7  &kp F8  &kp F9     &kp PSCRN      &none   &none      &none      &none     &none      &none
+&none   &kp F11  &kp F4  &kp F5  &kp F6     &kp SLCK       &none   &kp RCTRL  &kp RSHFT  &kp LALT  &kp RGUI   &none
+&none   &kp F10  &kp F1  &kp F2  &kp F3     &kp PAUSE_BREAK &none  &none      &none      &none     &none      &none
+                         &kp K_APP &kp SPACE &kp TAB        &none   &none
+                                  &none     &none          &none
+            >;
+        };
+
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ SCROLL - Trackball becomes scroll wheel                               │
+        // └──────────────────────────────────────────────────────────────────────┘
         scroll_layer {
-            label = "SCROLL";
             display-name = "Scroll";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -366,8 +208,10 @@
             >;
         };
 
+        // ┌──────────────────────────────────────────────────────────────────────┐
+        // │ SNIPING - Trackball precision mode (reduced DPI)                      │
+        // └──────────────────────────────────────────────────────────────────────┘
         sniping_layer {
-            label = "SNIPING";
             display-name = "Sniping";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -376,32 +220,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
                                 &trans  &trans    &trans
-            >;
-        };
-
-        config_layer {
-            label = "CONFIG";
-            display-name = "Config";
-            bindings = <
-&kp ESC  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &none
-&none    &none            &none            &none            &none            &none              &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &none            &none
-&none    &none            &kp C_PREV       &kp C_PP         &kp C_NEXT       &none              &kp F23          &kp F24          &rgb_brt_mm      &rgb_hue_mm      &rgb_eff_mm      &bootloader
-&none    &rgb_ug RGB_ON   &rgb_ug RGB_BRI  &none            &rgb_ug RGB_EFF  &none              &bt BT_CLR       &bt BT_CLR_ALL   &rgb_pow_mm      &none            &none            &to 0
-                                           &none            &none            &none              &none            &none
-                                                            &none            &none              &kp RETURN
-            >;
-        };
-
-        pointer_only {
-            label = "POINTERONLY";
-            display-name = "POINTERONLY";
-            bindings = <
-&trans  &none     &none         &none             &none             &none            &none     &none       &none                   &none              &none     &none
-&trans  &none     &none         &none             &none             &none            &mkp MB4  &mkp MB5    &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &none     &none
-&trans  &kp LWIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT         &kp LS(LG(S))    &kp C_PP  &kp RSHIFT  &kp RIGHT_CONTROL       &kp RIGHT_ALT      &kp RWIN  &none
-&trans  &none     &none         &mo 4             &kp LEFT_CONTROL  &mo 5            &mkp MB1  &mkp MB2    &mkp MB3                &none              &none     &to 0
-                                &mkp MB1          &mkp MB3          &mkp MB2         &mkp MB3  &mkp MB2
-                                                  &none             &kp LG(TAB)      &mkp MB1
             >;
         };
     };

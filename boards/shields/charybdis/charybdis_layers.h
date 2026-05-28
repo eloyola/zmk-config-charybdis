@@ -3,16 +3,18 @@
  * SPDX-License-Identifier: MIT
  * 
  * Common layer definitions for Charybdis keyboard
- * Shared across all shield variants
+ * Shared across all shield variants (trackball processors reference these)
  */
 
 #pragma once
 
 // Layer definitions matching the keymap
-#define BASE 0
-#define POINTER 1
-#define RAISE 2
-#define LOWER 3
-#define SCROLL 4
-#define SNIPING 5
-#define CONFIG 6
+#define BASE    0
+#define NAV     1
+#define POINTER 2
+#define MEDIA   3
+#define NUM     4
+#define SYM     5
+#define FUN     6
+#define SCROLL  7
+#define SNIPING 8
