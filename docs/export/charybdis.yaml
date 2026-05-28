@@ -391,9 +391,9 @@ layers:
   - ''
   - ''
   - ''
-  - APP
-  - SPACE
-  - TAB
+  - ''
+  - ''
+  - ''
   - ''
   - {type: held}
   - ''
