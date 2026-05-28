@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   Base:
-  - HOME
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - '-'
-  - END
+  - TAB
   - Q
   - W
   - F
@@ -48,7 +48,7 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - '`'
   - {t: ESC, h: Media}
   - {t: SPACE, h: Nav}
   - {t: TAB, h: Pointer}
@@ -530,3 +530,7 @@ combos:
   k: '&null_cond'
 - p: [32, 33]
   k: '&null_coal'
+- p: [38, 39]
+  k: '&line_comment'
+- p: [27, 31]
+  k: CAPS
