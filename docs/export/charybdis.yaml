@@ -12,51 +12,108 @@ layers:
   - '8'
   - '9'
   - '0'
-  - HOME
+  - '-'
   - TAB
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - END
-  - {t: LEFT CONTROL, h: sticky}
-  - A
-  - S
-  - D
   - F
-  - G
-  - H
+  - P
+  - B
   - J
-  - K
   - L
-  - ;
-  - {t: Symbols, h: toggle}
-  - {t: LSHFT, h: sticky}
-  - Z
-  - {t: X, h: Pointer}
-  - C
-  - V
-  - B
-  - B
-  - N
+  - U
+  - Y
+  - ''''
+  - \
+  - LCTRL
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LSHFT}
+  - {t: T, h: LCTRL}
+  - G
   - M
-  - {t: ',', h: Pointer}
+  - {t: N, h: RCTRL}
+  - {t: E, h: RSHFT}
+  - {t: I, h: LALT}
+  - {t: O, h: RGUI}
+  - ;
+  - LSHFT
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
   - .
+  - /
   - RSHFT
-  - SPACE
-  - LEFT CONTROL
-  - LEFT ALT
-  - LWIN
-  - RETURN
-  - BACKSPACE
-  - {t: DELETE, h: Lower}
-  - {t: SPACE, h: Symbols}
+  - {t: ESC, h: Media}
+  - {t: SPACE, h: Nav}
+  - {t: TAB, h: Pointer}
+  - {t: RET, h: Sym}
+  - {t: BSPC, h: Num}
+  - LALT
+  - {t: DEL, h: Fun}
+  - {t: TAB, h: Pointer}
+  Nav:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - REDO
+  - PASTE
+  - COPY
+  - CUT
+  - UNDO
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LSHFT
+  - LCTRL
+  - ''
+  - '&caps_word'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INS
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - RET
+  - BSPC
+  - ''
+  - ''
+  - DEL
   Pointer:
   - {t: ▽, type: trans}
   - ''
@@ -70,164 +127,278 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LSHFT
+  - LCTRL
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll
+  - ''
+  - Sniping
   - ''
   - '&mkp MB4'
   - '&mkp MB5'
-  - Gui+Ctl+LEFT ARROW
-  - Gui+Ctl+RIGHT
   - ''
   - ''
+  - ''
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - {t: '&mkp RCLK', type: held}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - '&mkp MCLK'
+  Media:
   - {t: ▽, type: trans}
-  - LWIN
-  - LEFT ALT
-  - LEFT CONTROL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LGUI
+  - LALT
   - LSHFT
-  - Sft+Gui+S
-  - PP
-  - RSHIFT
-  - RIGHT CONTROL
-  - RIGHT ALT
-  - RWIN
+  - LCTRL
   - ''
-  - {t: ▽, type: trans}
+  - ''
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - ''
   - {type: held}
-  - Scroll
-  - LEFT CONTROL
-  - Sniping
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - ''
-  - Gui+TAB
-  - '&mkp MB1'
-  Lower:
-  - F12
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - ''
-  - ''
-  - ''
+  - STOP
+  - PP
   - ''
   - ''
   - MUTE
-  - KP 7
-  - KP 8
-  - KP 9
-  - ''
-  - +
-  - '-'
-  - ''
-  - ''
-  - PAGE UP
-  - UP ARROW
-  - PAGE DOWN
-  - VOLUME UP
-  - KP 4
-  - KP 5
-  - KP 6
-  - ''
-  - '*'
-  - /
-  - CAPS
-  - ''
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - VOLUME DOWN
-  - KP 1
-  - KP 2
-  - KP 3
-  - ''
-  - '='
-  - ''
+  Num:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RCTRL
-  - KP 0
-  - ''
-  - {type: held}
-  - .
-  Symbols:
-  - F12
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
   - ''
   - ''
-  - '#'
-  - '&e_tilde'
-  - ^
-  - '{'
-  - '}'
-  - '&u_tilde'
-  - '&i_tilde'
-  - '&o_tilde'
   - ''
-  - '`'
-  - {t: ▽, type: trans}
-  - '&a_tilde'
-  - '@'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - '['
+  - '7'
+  - '8'
+  - '9'
   - ']'
-  - $
-  - '&euro'
-  - '&pound'
-  - {t: ▽, type: trans}
-  - ''''
-  - {t: ▽, type: trans}
-  - _
-  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - ''
+  - RCTRL
+  - RSHFT
+  - LALT
+  - RGUI
+  - ''
+  - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
   - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - .
+  - '0'
+  - '-'
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  Sym:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - ''
+  - RCTRL
+  - RSHFT
+  - LALT
+  - RGUI
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '@'
+  - '#'
   - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - (
   - )
-  - '&n_tilde'
-  - '?'
-  - <
-  - '>'
-  - {t: Base, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - _
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  Fun:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F12
+  - F7
+  - F8
+  - F9
+  - PSCRN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - ''
+  - RCTRL
+  - RSHFT
+  - LALT
+  - RGUI
+  - ''
+  - ''
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - APP
+  - SPACE
+  - TAB
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -267,19 +438,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,142 +495,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Config:
-  - ESC
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP 0
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - PREV
-  - PP
-  - NEXT
-  - ''
-  - F23
-  - F24
-  - {t: RGB BRI, s: RGB BRD}
-  - {t: RGB HUI, s: RGB HUD}
-  - {t: RGB EFF, s: RGB EFR}
-  - '&bootloader'
-  - ''
-  - RGB ON
-  - RGB BRI
-  - ''
-  - RGB EFF
-  - ''
-  - BT CLR
-  - BT CLR ALL
-  - {t: RGB ON, s: RGB OFF}
-  - ''
-  - ''
-  - {t: Base, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RETURN
-  POINTERONLY:
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp MB4'
-  - '&mkp MB5'
-  - Gui+Ctl+LEFT ARROW
-  - Gui+Ctl+RIGHT
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - LWIN
-  - LEFT ALT
-  - LEFT CONTROL
-  - LSHFT
-  - Sft+Gui+S
-  - PP
-  - RSHIFT
-  - RIGHT CONTROL
-  - RIGHT ALT
-  - RWIN
-  - ''
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - Scroll
-  - LEFT CONTROL
-  - Sniping
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - ''
-  - ''
-  - {t: Base, h: toggle}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - ''
-  - Gui+TAB
-  - '&mkp MB1'
 combos:
 - p: [53, 54, 55]
   k: '&studio_unlock'
-- p: [50, 51, 52]
-  k: {t: Config, h: toggle}
-- p: [51, 52, 55]
-  k: {t: POINTERONLY, h: toggle}
