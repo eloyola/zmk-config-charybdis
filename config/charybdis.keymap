@@ -269,7 +269,7 @@
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &hml LSHFT T   &kp G              &kp M            &hmr RSHFT N  &hmr RCTRL E  &hmr LALT I  &hmr RGUI O  &kp SEMI
 &skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D          &kp V              &kp K            &kp H         &kp COMMA     &kp DOT      &kp FSLH     &kp RSHFT
                                                   &lt MEDIA ESC       &lt NAV SPACE  &lt POINTER TAB    &lt 4 BACKSPACE  &lt 6 DEL
-                                                                      &kp LALT       &kp LWIN           &lt 5 RETURN
+                                                                      &kp DEL        &kp BSPC           &lt 5 RETURN
             >;
         };
 
