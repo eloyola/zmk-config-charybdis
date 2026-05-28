@@ -28,12 +28,12 @@ layers:
   - {t: LCTRL, h: sticky}
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
-  - {t: S, h: LSHFT}
-  - {t: T, h: LCTRL}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
   - G
   - M
-  - {t: N, h: RCTRL}
-  - {t: E, h: RSHFT}
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
   - {t: I, h: LALT}
   - {t: O, h: RGUI}
   - ;
@@ -163,9 +163,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
   - ''
