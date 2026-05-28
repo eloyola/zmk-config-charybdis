@@ -309,7 +309,7 @@
 &kp TAB     &kp Q              &kp W              &kp F               &kp P               &kp B       &kp J            &kp L               &kp U               &kp Y              &kp SQT            &kp BACKSLASH
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &lhome_row LSHFT T  &kp G       &kp M            &rhome_row RSHFT N  &rhome_row RCTRL E  &rhome_row LALT I  &rhome_row RGUI O  &kp SEMI
 &skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D               &kp V       &kp K            &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp GRAVE
-                                                  &lt MEDIA ESC       &lt NAV SPACE       &kp TAB     &lt 5 RETURN     &lt 6 DEL
+                                                  &lt MEDIA HOME      &lt NAV SPACE       &kp END     &lt 5 RETURN     &lt 6 DEL
                                                                       &kp DEL             &kp LWIN    &lt 4 BACKSPACE
             >;
         };
