@@ -49,13 +49,13 @@ layers:
   - .
   - /
   - '`'
-  - {t: HOME, h: Media}
-  - {t: SPACE, h: Nav}
-  - END
-  - {t: RETURN, h: Sym}
-  - {t: DEL, h: Fun}
-  - DEL
   - LWIN
+  - {t: SPACE, h: Nav}
+  - HOME
+  - {t: DELETE, h: Sym}
+  - {t: RET, h: Fun}
+  - DEL
+  - {t: END, h: Media}
   - {t: BACKSPACE, h: Num}
   Nav:
   - {t: ▽, type: trans}
@@ -109,11 +109,11 @@ layers:
   - ''
   - {type: held}
   - ''
-  - BACKSPACE
   - DELETE
+  - RETURN
   - ''
   - ''
-  - RET
+  - BACKSPACE
   Pointer:
   - {t: ▽, type: trans}
   - ''
@@ -220,13 +220,13 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - STOP
   - PP
   - ''
-  - ''
+  - {type: held}
   - MUTE
   Num:
   - {t: ▽, type: trans}
