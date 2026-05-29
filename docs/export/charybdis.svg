@@ -407,10 +407,6 @@ path.combo {
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
 </g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 392)" class="layer-Nav">
@@ -640,10 +636,6 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
-</g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
 </g>
 </g>
 </g>
@@ -895,10 +887,6 @@ path.combo {
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
 </g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1176)" class="layer-Media">
@@ -1133,10 +1121,6 @@ path.combo {
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
 </g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1568)" class="layer-Num">
@@ -1366,10 +1350,6 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
-</g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
 </g>
 </g>
 </g>
@@ -1603,10 +1583,6 @@ path.combo {
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
 </g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 2352)" class="layer-Fun">
@@ -1837,10 +1813,6 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
-</g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
 </g>
 </g>
 </g>
@@ -2103,10 +2075,6 @@ path.combo {
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
 </g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 3136)" class="layer-Sniping">
@@ -2367,10 +2335,6 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="546" y="127" width="28" height="26" class="combo"/>
 <text x="560" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;null_coal</tspan></text>
-</g>
-<g class="combo combopos-8">
-<rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
-<text x="168" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;line_comm…</tspan></text>
 </g>
 </g>
 </g>

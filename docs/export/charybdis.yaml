@@ -530,5 +530,3 @@ combos:
   k: '&null_cond'
 - p: [32, 33]
   k: '&null_coal'
-- p: [38, 39]
-  k: '&line_comment'
