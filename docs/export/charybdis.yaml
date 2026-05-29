@@ -50,8 +50,8 @@ layers:
   - /
   - '`'
   - LWIN
-  - {t: SPACE, h: Nav}
-  - {t: HOME, h: Pointer}
+  - {t: SPACE, h: Pointer}
+  - {t: HOME, h: Nav}
   - {t: DELETE, h: Num}
   - {t: RET, h: Fun}
   - DEL
@@ -107,8 +107,8 @@ layers:
   - END
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -164,8 +164,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - '&mkp MCLK'
   - '&mkp RCLK'
   - ''
@@ -449,8 +449,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -506,8 +506,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
