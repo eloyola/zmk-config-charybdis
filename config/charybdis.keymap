@@ -186,13 +186,6 @@
         };
 
         // // (line comment) - C + D (left bottom, middle + index)
-
-        combo_line_comment {
-            timeout-ms = <40>;
-            key-positions = <38 39>;
-            bindings = <&line_comment>;
-        };
-
         // CAPSLOCK - both home row shift keys (T + N)
     };
 
@@ -278,13 +271,6 @@
             #binding-cells = <0>;
             bindings = <&kp QMARK &kp QMARK>;
             label = "NULL_COAL";
-        };
-
-        line_comment: line_comment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH &kp FSLH>;
-            label = "LINE_COMMENT";
         };
     };
 
