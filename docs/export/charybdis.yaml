@@ -49,14 +49,14 @@ layers:
   - .
   - /
   - '`'
-  - LWIN
+  - BACKSPACE
   - {t: SPACE, h: Pointer}
   - {t: HOME, h: Nav}
-  - {t: DELETE, h: Num}
+  - {t: SPACE, h: Num}
   - {t: RET, h: Fun}
-  - DEL
+  - LWIN
   - {t: END, h: Media}
-  - {t: BACKSPACE, h: Sym}
+  - {t: DELETE, h: Sym}
   Nav:
   - {t: ▽, type: trans}
   - ''
@@ -89,28 +89,28 @@ layers:
   - LSHIFT
   - ''
   - '&caps_word'
+  - PG UP
+  - UP
+  - PG DN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - LEFT
   - DOWN
-  - UP
   - RIGHT
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - INS
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - ''
-  - ''
-  - ''
   - {type: held}
-  - ''
-  - ''
+  - HOME
+  - END
   - ''
   - ''
   - ''
@@ -367,7 +367,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - INS
   - F11
   - F4
   - F5
