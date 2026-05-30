@@ -49,13 +49,13 @@ layers:
   - .
   - /
   - '`'
-  - BACKSPACE
+  - {t: BACKSPACE, h: Nav}
   - SPACE
-  - {t: HOME, h: Nav}
+  - {t: HOME, h: Media}
   - {t: SPACE, h: Sym}
   - {t: RET, h: Fun}
   - LWIN
-  - {t: END, h: Media}
+  - END
   - {t: DELETE, h: Num}
   Nav:
   - {t: ▽, type: trans}
@@ -106,9 +106,9 @@ layers:
   - RIGHT
   - ''
   - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
   - HOME
   - END
   - ''
@@ -178,11 +178,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - ''
   - ''
   - ''
@@ -214,19 +214,19 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
   - STOP
   - PP
   - ''
-  - {type: held}
+  - ''
   - MUTE
   Num:
   - {t: ▽, type: trans}
@@ -254,11 +254,11 @@ layers:
   - ''
   - ''
   - ''
-  - ;
+  - ''
   - '4'
   - '5'
   - '6'
-  - '='
+  - '-'
   - ''
   - RSHIFT
   - RCTRL
@@ -266,11 +266,11 @@ layers:
   - RGUI
   - ''
   - ''
-  - '`'
+  - ''
   - '1'
   - '2'
   - '3'
-  - \
+  - '*'
   - ''
   - ''
   - ''
@@ -279,7 +279,7 @@ layers:
   - ''
   - .
   - '0'
-  - '-'
+  - '='
   - ''
   - ''
   - ''
@@ -299,7 +299,7 @@ layers:
   - ''
   - ''
   - ''
-  - '|'
+  - ''
   - '&'
   - '*'
   - '{'
@@ -311,7 +311,7 @@ layers:
   - ''
   - ''
   - ''
-  - +
+  - ''
   - $
   - '%'
   - (
@@ -323,7 +323,7 @@ layers:
   - RGUI
   - ''
   - ''
-  - '~'
+  - ''
   - '#'
   - '!'
   - <
