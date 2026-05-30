@@ -39,7 +39,7 @@ layers:
   - ;
   - {t: LSHFT, h: sticky}
   - Z
-  - X
+  - {t: X, h: Pointer}
   - C
   - D
   - V
@@ -50,7 +50,7 @@ layers:
   - /
   - '`'
   - BACKSPACE
-  - {t: SPACE, h: Pointer}
+  - SPACE
   - {t: HOME, h: Nav}
   - {t: SPACE, h: Sym}
   - {t: RET, h: Fun}
@@ -140,32 +140,32 @@ layers:
   - ''
   - ''
   - ''
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHIFT
+  - ''
+  - ''
+  - ''
+  - ''
   - Sft+Gui+S
   - ''
+  - RSHIFT
+  - RCTRL
+  - RALT
+  - RWIN
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - {type: held}
   - Scroll
+  - LCTRL
+  - Sniping
   - ''
   - Scroll
   - RCTRL
   - Sniping
   - ''
   - ''
-  - ''
-  - {type: held}
-  - ''
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
   - ''
@@ -438,9 +438,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -449,7 +447,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -495,18 +495,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
