@@ -133,7 +133,7 @@
 
         combo_fat_arrow {
             timeout-ms = <40>;
-            key-positions = <39 40>;
+            key-positions = <40 41>;
             bindings = <&fat_arrow>;
         };
 
@@ -154,37 +154,9 @@
         };
 
         // && (logical AND) - X + C (left bottom, ring + middle)
-
-        combo_dbl_amp {
-            timeout-ms = <40>;
-            key-positions = <37 38>;
-            bindings = <&dbl_amp>;
-        };
-
         // || (logical OR) - , + . (right bottom, middle + ring)
-
-        combo_dbl_pipe {
-            timeout-ms = <40>;
-            key-positions = <43 44>;
-            bindings = <&dbl_pipe>;
-        };
-
         // ?. (null-conditional) - . + / (right bottom, ring + pinky)
-
-        combo_null_cond {
-            timeout-ms = <40>;
-            key-positions = <44 45>;
-            bindings = <&null_cond>;
-        };
-
         // ?? (null-coalescing) - I + O (right home, ring + pinky)
-
-        combo_null_coal {
-            timeout-ms = <40>;
-            key-positions = <32 33>;
-            bindings = <&null_coal>;
-        };
-
         // // (line comment) - C + D (left bottom, middle + index)
         // CAPSLOCK - both home row shift keys (T + N)
     };
@@ -244,34 +216,6 @@
             bindings = <&kp EQUAL &kp EQUAL>;
             label = "DBL_EQUAL";
         };
-
-        dbl_amp: dbl_amp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp AMPS &kp AMPS>;
-            label = "DBL_AMP";
-        };
-
-        dbl_pipe: dbl_pipe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp PIPE>;
-            label = "DBL_PIPE";
-        };
-
-        null_cond: null_cond {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK &kp DOT>;
-            label = "NULL_COND";
-        };
-
-        null_coal: null_coal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK &kp QMARK>;
-            label = "NULL_COAL";
-        };
     };
 
     keymap {
@@ -289,7 +233,7 @@
 &kp TAB     &kp Q              &kp W              &kp F               &kp P               &kp B         &kp J         &kp L               &kp U               &kp Y              &kp SQT            &kp BACKSLASH
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &lhome_row LSHFT T  &kp G         &kp M         &rhome_row RSHFT N  &rhome_row RCTRL E  &rhome_row LALT I  &rhome_row RGUI O  &kp SEMI
 &skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D               &kp V         &kp K         &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp GRAVE
-                                                  &lt 1 BACKSPACE     &kp SPACE           &lt 3 HOME    &lt 5 SPACE   &lt 6 RET
+                                                  &lt 1 SPACE         &kp BACKSPACE       &lt 3 HOME    &lt 5 SPACE   &lt 6 RET
                                                                       &kp LWIN            &kp END       &lt 4 DELETE
             >;
         };
@@ -413,6 +357,17 @@
 
         sniping_layer {
             display-name = "Sniping";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+        };
+
+        tilde_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
