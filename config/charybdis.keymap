@@ -216,6 +216,90 @@
             bindings = <&kp EQUAL &kp EQUAL>;
             label = "DBL_EQUAL";
         };
+
+        a_tilde: a_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "A_TILDE";
+        };
+
+        e_tilde: e_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "E_TILDE";
+        };
+
+        i_tilde: i_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "I_TILDE";
+        };
+
+        o_tilde: o_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "O_TILDE";
+        };
+
+        u_tilde: u_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "U_TILDE";
+        };
+
+        n_tilde: n_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "N_TILDE";
+        };
     };
 
     keymap {
@@ -233,7 +317,7 @@
 &kp TAB     &kp Q              &kp W              &kp F               &kp P               &kp B         &kp J         &kp L               &kp U               &kp Y              &kp SQT            &kp BACKSLASH
 &skq LCTRL  &lhome_row LGUI A  &lhome_row LALT R  &lhome_row LCTRL S  &lhome_row LSHFT T  &kp G         &kp M         &rhome_row RSHFT N  &rhome_row RCTRL E  &rhome_row LALT I  &rhome_row RGUI O  &kp SEMI
 &skq LSHFT  &kp Z              &lt 2 X            &kp C               &kp D               &kp V         &kp K         &kp H               &kp COMMA           &kp DOT            &kp FSLH           &kp GRAVE
-                                                  &lt 1 SPACE         &kp BACKSPACE       &lt 3 HOME    &lt 5 SPACE   &lt 6 RET
+                                                  &lt 1 SPACE         &lt 9 BACKSPACE     &lt 3 HOME    &lt 5 SPACE   &lt 6 RET
                                                                       &kp LWIN            &kp END       &lt 4 DELETE
             >;
         };
@@ -370,12 +454,12 @@
         tilde_layer {
             display-name = "Tilde";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans    &u_tilde  &trans    &trans    &trans
+&trans  &a_tilde  &trans  &trans  &trans  &trans    &trans  &n_tilde  &e_tilde  &i_tilde  &o_tilde  &trans
+&trans  &trans    &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans    &trans
+                          &trans  &trans  &trans    &trans  &trans
+                                  &trans  &trans    &trans
             >;
         };
     };
