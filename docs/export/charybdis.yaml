@@ -135,8 +135,8 @@ layers:
   - ''
   - '&mkp MB4'
   - '&mkp MB5'
-  - Sft+Gui+LEFT ARROW
-  - Sft+Gui+RIGHT
+  - Gui+Ctl+LEFT
+  - Gui+Ctl+RIGHT
   - ''
   - ''
   - ''
