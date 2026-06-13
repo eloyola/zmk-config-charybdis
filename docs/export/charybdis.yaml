@@ -50,8 +50,8 @@ layers:
   - /
   - '`'
   - {t: SPACE, h: Nav}
-  - {t: BACKSPACE, h: Tilde}
-  - {t: HOME, h: Media}
+  - {t: BACKSPACE, h: Media}
+  - {t: HOME, h: Tilde}
   - {t: SPACE, h: Sym}
   - {t: RET, h: Fun}
   - LWIN
@@ -201,11 +201,7 @@ layers:
   - LALT
   - LCTRL
   - LSHIFT
-  - ''
-  - ''
-  - PREV
-  - VOL DN
-  - VOL UP
+  - VOLUME UP
   - NEXT
   - ''
   - ''
@@ -217,12 +213,16 @@ layers:
   - ''
   - ''
   - ''
+  - VOLUME DOWN
+  - PREV
+  - ''
   - ''
   - ''
   - ''
   - ''
   - ''
   - {type: held}
+  - ''
   - STOP
   - PP
   - ''
@@ -563,8 +563,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
