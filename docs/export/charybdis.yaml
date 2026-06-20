@@ -304,12 +304,12 @@ layers:
   - '*'
   - '{'
   - '}'
-  - ''
-  - '&euro'
-  - '&pound'
-  - ''
-  - ''
-  - ''
+  - Ctl+Y
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
+  - Ctl+S
   - ''
   - ''
   - $
