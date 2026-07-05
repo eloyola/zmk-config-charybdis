@@ -304,12 +304,12 @@ layers:
   - '*'
   - '{'
   - '}'
-  - Ctl+Y
-  - Ctl+V
-  - Ctl+C
-  - Ctl+X
-  - Ctl+Z
-  - Ctl+S
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - $
@@ -361,12 +361,12 @@ layers:
   - F8
   - F9
   - PSCRN
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+Y
+  - Ctl+V
+  - Ctl+C
+  - Ctl+X
+  - Ctl+Z
+  - Ctl+S
   - INS
   - F11
   - F4
