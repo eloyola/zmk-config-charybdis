@@ -224,7 +224,7 @@ layers:
   - {type: held}
   - ''
   - STOP
-  - PP
+  - PLAY PAUSE
   - ''
   - ''
   - MUTE
